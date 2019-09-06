@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 74a9bce04b7520b4a84cda29acd0942e
+timeCreated: 1515865086
+licenseType: Store
 TextureImporter:
   fileIDToRecycleName:
     21300000: Gladiator_Pack_Unity3d_0
@@ -382,9 +384,8 @@ TextureImporter:
     21300754: Gladiator_Pack_Unity3d_394
     21300756: Gladiator_Pack_Unity3d_116
     21300758: Gladiator_Pack_Unity3d_48
-    2186277476908879412: ImportLogs
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 4
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -402,8 +403,6 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
-  streamingMipmaps: 0
-  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -414,7 +413,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: 0
     aniso: -1
-    mipBias: -100
+    mipBias: -1
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -426,21 +425,18 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spritePixelsToUnits: 16
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
-  singleChannelComponent: 0
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
-  - serializedVersion: 2
-    buildTarget: DefaultTexturePlatform
+  - buildTarget: DefaultTexturePlatform
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -450,8 +446,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Standalone
+  - buildTarget: Standalone
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -461,8 +456,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: Android
+  - buildTarget: Android
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -472,8 +466,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
-    buildTarget: WebGL
+  - buildTarget: WebGL
     maxTextureSize: 1024
     resizeAlgorithm: 0
     textureFormat: -1
@@ -500,12 +493,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_1
       rect:
@@ -520,12 +507,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_2
       rect:
@@ -540,12 +521,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_3
       rect:
@@ -560,12 +535,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_4
       rect:
@@ -580,12 +549,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_5
       rect:
@@ -600,12 +563,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_6
       rect:
@@ -620,12 +577,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_7
       rect:
@@ -640,12 +591,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_8
       rect:
@@ -660,12 +605,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_9
       rect:
@@ -680,12 +619,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_10
       rect:
@@ -700,12 +633,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_11
       rect:
@@ -720,12 +647,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_12
       rect:
@@ -740,12 +661,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_13
       rect:
@@ -760,12 +675,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_14
       rect:
@@ -780,12 +689,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_15
       rect:
@@ -800,12 +703,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_16
       rect:
@@ -820,12 +717,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_17
       rect:
@@ -840,12 +731,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_18
       rect:
@@ -860,12 +745,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_19
       rect:
@@ -880,12 +759,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_20
       rect:
@@ -900,12 +773,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_21
       rect:
@@ -920,12 +787,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_22
       rect:
@@ -940,12 +801,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_23
       rect:
@@ -960,12 +815,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_24
       rect:
@@ -980,12 +829,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_25
       rect:
@@ -1000,12 +843,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_26
       rect:
@@ -1020,12 +857,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_27
       rect:
@@ -1040,12 +871,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_28
       rect:
@@ -1060,12 +885,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_29
       rect:
@@ -1080,12 +899,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_30
       rect:
@@ -1100,12 +913,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_31
       rect:
@@ -1120,12 +927,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_32
       rect:
@@ -1140,12 +941,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_33
       rect:
@@ -1160,12 +955,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_34
       rect:
@@ -1180,12 +969,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_35
       rect:
@@ -1200,12 +983,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_36
       rect:
@@ -1220,12 +997,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_37
       rect:
@@ -1240,12 +1011,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_38
       rect:
@@ -1260,12 +1025,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_39
       rect:
@@ -1280,12 +1039,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_40
       rect:
@@ -1300,12 +1053,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_41
       rect:
@@ -1320,12 +1067,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_42
       rect:
@@ -1340,12 +1081,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_43
       rect:
@@ -1360,12 +1095,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_44
       rect:
@@ -1380,12 +1109,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_45
       rect:
@@ -1400,12 +1123,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_46
       rect:
@@ -1420,12 +1137,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_47
       rect:
@@ -1440,12 +1151,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_50
       rect:
@@ -1460,12 +1165,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_51
       rect:
@@ -1480,12 +1179,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_52
       rect:
@@ -1500,12 +1193,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_53
       rect:
@@ -1520,12 +1207,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_54
       rect:
@@ -1540,12 +1221,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_55
       rect:
@@ -1560,12 +1235,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_56
       rect:
@@ -1580,12 +1249,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_57
       rect:
@@ -1600,12 +1263,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_58
       rect:
@@ -1620,12 +1277,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_59
       rect:
@@ -1640,12 +1291,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_61
       rect:
@@ -1660,12 +1305,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_62
       rect:
@@ -1680,12 +1319,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_63
       rect:
@@ -1700,12 +1333,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_64
       rect:
@@ -1720,12 +1347,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_65
       rect:
@@ -1740,12 +1361,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_66
       rect:
@@ -1760,12 +1375,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_67
       rect:
@@ -1780,12 +1389,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_68
       rect:
@@ -1800,12 +1403,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_69
       rect:
@@ -1820,12 +1417,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_70
       rect:
@@ -1840,12 +1431,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_71
       rect:
@@ -1860,12 +1445,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_72
       rect:
@@ -1880,12 +1459,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_73
       rect:
@@ -1900,12 +1473,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_74
       rect:
@@ -1920,12 +1487,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_75
       rect:
@@ -1940,12 +1501,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_76
       rect:
@@ -1960,12 +1515,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_77
       rect:
@@ -1980,12 +1529,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_78
       rect:
@@ -2000,12 +1543,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_79
       rect:
@@ -2020,12 +1557,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_80
       rect:
@@ -2040,12 +1571,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_81
       rect:
@@ -2060,12 +1585,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_82
       rect:
@@ -2080,12 +1599,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_83
       rect:
@@ -2100,12 +1613,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_84
       rect:
@@ -2120,12 +1627,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_85
       rect:
@@ -2140,12 +1641,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_86
       rect:
@@ -2160,12 +1655,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_87
       rect:
@@ -2180,12 +1669,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_88
       rect:
@@ -2200,12 +1683,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_89
       rect:
@@ -2220,12 +1697,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_90
       rect:
@@ -2240,12 +1711,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_91
       rect:
@@ -2260,12 +1725,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_92
       rect:
@@ -2280,12 +1739,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_93
       rect:
@@ -2300,12 +1753,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_94
       rect:
@@ -2320,12 +1767,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_95
       rect:
@@ -2340,12 +1781,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_96
       rect:
@@ -2360,12 +1795,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_97
       rect:
@@ -2380,12 +1809,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_98
       rect:
@@ -2400,12 +1823,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_99
       rect:
@@ -2420,12 +1837,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_100
       rect:
@@ -2440,12 +1851,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_101
       rect:
@@ -2460,12 +1865,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_102
       rect:
@@ -2480,12 +1879,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_103
       rect:
@@ -2500,12 +1893,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_104
       rect:
@@ -2520,12 +1907,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_105
       rect:
@@ -2540,12 +1921,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_106
       rect:
@@ -2560,12 +1935,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_107
       rect:
@@ -2580,12 +1949,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_108
       rect:
@@ -2600,12 +1963,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_109
       rect:
@@ -2620,12 +1977,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_110
       rect:
@@ -2640,12 +1991,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_111
       rect:
@@ -2660,12 +2005,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_112
       rect:
@@ -2680,12 +2019,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_113
       rect:
@@ -2700,12 +2033,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_114
       rect:
@@ -2720,12 +2047,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_115
       rect:
@@ -2740,12 +2061,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_117
       rect:
@@ -2760,12 +2075,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_121
       rect:
@@ -2780,12 +2089,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_122
       rect:
@@ -2800,12 +2103,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_123
       rect:
@@ -2820,12 +2117,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_124
       rect:
@@ -2840,12 +2131,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_125
       rect:
@@ -2860,12 +2145,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_126
       rect:
@@ -2880,12 +2159,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_127
       rect:
@@ -2900,12 +2173,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_128
       rect:
@@ -2920,12 +2187,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_129
       rect:
@@ -2940,12 +2201,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_130
       rect:
@@ -2960,12 +2215,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_131
       rect:
@@ -2980,12 +2229,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_132
       rect:
@@ -3000,12 +2243,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_133
       rect:
@@ -3020,12 +2257,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_137
       rect:
@@ -3040,12 +2271,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_138
       rect:
@@ -3060,12 +2285,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_139
       rect:
@@ -3080,12 +2299,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_140
       rect:
@@ -3100,12 +2313,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_148
       rect:
@@ -3120,12 +2327,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_149
       rect:
@@ -3140,12 +2341,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_150
       rect:
@@ -3160,12 +2355,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_151
       rect:
@@ -3180,12 +2369,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_152
       rect:
@@ -3200,12 +2383,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_153
       rect:
@@ -3220,12 +2397,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_154
       rect:
@@ -3240,12 +2411,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_155
       rect:
@@ -3260,12 +2425,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_156
       rect:
@@ -3280,12 +2439,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_157
       rect:
@@ -3300,12 +2453,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_158
       rect:
@@ -3320,12 +2467,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_159
       rect:
@@ -3340,12 +2481,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_160
       rect:
@@ -3360,12 +2495,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_161
       rect:
@@ -3380,12 +2509,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_162
       rect:
@@ -3400,12 +2523,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_163
       rect:
@@ -3420,12 +2537,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_164
       rect:
@@ -3440,12 +2551,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_165
       rect:
@@ -3460,12 +2565,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_166
       rect:
@@ -3480,12 +2579,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_167
       rect:
@@ -3500,12 +2593,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_168
       rect:
@@ -3520,12 +2607,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_169
       rect:
@@ -3540,12 +2621,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_170
       rect:
@@ -3560,12 +2635,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_171
       rect:
@@ -3580,12 +2649,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_172
       rect:
@@ -3600,12 +2663,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_173
       rect:
@@ -3620,12 +2677,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_174
       rect:
@@ -3640,12 +2691,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_175
       rect:
@@ -3660,12 +2705,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_176
       rect:
@@ -3680,12 +2719,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_177
       rect:
@@ -3700,12 +2733,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_178
       rect:
@@ -3720,12 +2747,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_179
       rect:
@@ -3740,12 +2761,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_180
       rect:
@@ -3760,12 +2775,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_181
       rect:
@@ -3780,12 +2789,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_182
       rect:
@@ -3800,12 +2803,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_183
       rect:
@@ -3820,12 +2817,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_184
       rect:
@@ -3840,12 +2831,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_185
       rect:
@@ -3860,12 +2845,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_186
       rect:
@@ -3880,12 +2859,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_187
       rect:
@@ -3900,12 +2873,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_188
       rect:
@@ -3920,12 +2887,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_189
       rect:
@@ -3940,12 +2901,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_190
       rect:
@@ -3960,12 +2915,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_191
       rect:
@@ -3980,12 +2929,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_192
       rect:
@@ -4000,12 +2943,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_193
       rect:
@@ -4020,12 +2957,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_194
       rect:
@@ -4040,12 +2971,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_195
       rect:
@@ -4060,12 +2985,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_196
       rect:
@@ -4080,12 +2999,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_197
       rect:
@@ -4100,12 +3013,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_198
       rect:
@@ -4120,12 +3027,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_199
       rect:
@@ -4140,12 +3041,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_200
       rect:
@@ -4160,12 +3055,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_201
       rect:
@@ -4180,12 +3069,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_202
       rect:
@@ -4200,12 +3083,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_203
       rect:
@@ -4220,12 +3097,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_204
       rect:
@@ -4240,12 +3111,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_205
       rect:
@@ -4260,12 +3125,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_206
       rect:
@@ -4280,12 +3139,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_207
       rect:
@@ -4300,12 +3153,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_208
       rect:
@@ -4320,12 +3167,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_209
       rect:
@@ -4340,12 +3181,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_210
       rect:
@@ -4360,12 +3195,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_211
       rect:
@@ -4380,12 +3209,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_212
       rect:
@@ -4400,12 +3223,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_213
       rect:
@@ -4420,12 +3237,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_214
       rect:
@@ -4440,12 +3251,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_215
       rect:
@@ -4460,12 +3265,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_216
       rect:
@@ -4480,12 +3279,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_217
       rect:
@@ -4500,12 +3293,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_218
       rect:
@@ -4520,12 +3307,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_219
       rect:
@@ -4540,12 +3321,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_220
       rect:
@@ -4560,12 +3335,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_221
       rect:
@@ -4580,12 +3349,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_222
       rect:
@@ -4600,12 +3363,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_223
       rect:
@@ -4620,12 +3377,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_224
       rect:
@@ -4640,12 +3391,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_225
       rect:
@@ -4660,12 +3405,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_226
       rect:
@@ -4680,12 +3419,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_227
       rect:
@@ -4700,12 +3433,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_228
       rect:
@@ -4720,12 +3447,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_229
       rect:
@@ -4740,12 +3461,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_230
       rect:
@@ -4760,12 +3475,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_231
       rect:
@@ -4780,12 +3489,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_232
       rect:
@@ -4800,12 +3503,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_233
       rect:
@@ -4820,12 +3517,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_234
       rect:
@@ -4840,12 +3531,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_235
       rect:
@@ -4860,12 +3545,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_236
       rect:
@@ -4880,12 +3559,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_237
       rect:
@@ -4900,12 +3573,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_238
       rect:
@@ -4920,12 +3587,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_239
       rect:
@@ -4940,12 +3601,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_240
       rect:
@@ -4960,12 +3615,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_241
       rect:
@@ -4980,12 +3629,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_242
       rect:
@@ -5000,12 +3643,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_243
       rect:
@@ -5020,12 +3657,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_244
       rect:
@@ -5040,12 +3671,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_245
       rect:
@@ -5060,12 +3685,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_246
       rect:
@@ -5080,12 +3699,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_247
       rect:
@@ -5100,12 +3713,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_248
       rect:
@@ -5120,12 +3727,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_249
       rect:
@@ -5140,12 +3741,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_250
       rect:
@@ -5160,12 +3755,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_251
       rect:
@@ -5180,12 +3769,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_252
       rect:
@@ -5200,12 +3783,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_253
       rect:
@@ -5220,12 +3797,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_254
       rect:
@@ -5240,12 +3811,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_255
       rect:
@@ -5260,12 +3825,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_256
       rect:
@@ -5280,12 +3839,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_257
       rect:
@@ -5300,12 +3853,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_258
       rect:
@@ -5320,12 +3867,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_259
       rect:
@@ -5340,12 +3881,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_260
       rect:
@@ -5360,12 +3895,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_261
       rect:
@@ -5380,12 +3909,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_262
       rect:
@@ -5400,12 +3923,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_263
       rect:
@@ -5420,12 +3937,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_264
       rect:
@@ -5440,12 +3951,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_265
       rect:
@@ -5460,12 +3965,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_266
       rect:
@@ -5480,12 +3979,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_267
       rect:
@@ -5500,12 +3993,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_268
       rect:
@@ -5520,12 +4007,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_269
       rect:
@@ -5540,12 +4021,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_270
       rect:
@@ -5560,12 +4035,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_271
       rect:
@@ -5580,12 +4049,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_272
       rect:
@@ -5600,12 +4063,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_273
       rect:
@@ -5620,12 +4077,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_274
       rect:
@@ -5640,12 +4091,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_275
       rect:
@@ -5660,12 +4105,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_276
       rect:
@@ -5680,12 +4119,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_277
       rect:
@@ -5700,12 +4133,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_278
       rect:
@@ -5720,12 +4147,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_279
       rect:
@@ -5740,12 +4161,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_280
       rect:
@@ -5760,12 +4175,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_281
       rect:
@@ -5780,12 +4189,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_282
       rect:
@@ -5800,12 +4203,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_283
       rect:
@@ -5820,12 +4217,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_284
       rect:
@@ -5840,12 +4231,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_285
       rect:
@@ -5860,12 +4245,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_286
       rect:
@@ -5880,12 +4259,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_287
       rect:
@@ -5900,12 +4273,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_288
       rect:
@@ -5920,12 +4287,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_289
       rect:
@@ -5940,12 +4301,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_290
       rect:
@@ -5960,12 +4315,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_291
       rect:
@@ -5980,12 +4329,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_292
       rect:
@@ -6000,12 +4343,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_293
       rect:
@@ -6020,12 +4357,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_294
       rect:
@@ -6040,12 +4371,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_295
       rect:
@@ -6060,12 +4385,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_296
       rect:
@@ -6080,12 +4399,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_297
       rect:
@@ -6100,12 +4413,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_298
       rect:
@@ -6120,12 +4427,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_299
       rect:
@@ -6140,12 +4441,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_300
       rect:
@@ -6160,12 +4455,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_301
       rect:
@@ -6180,12 +4469,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_302
       rect:
@@ -6200,12 +4483,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_303
       rect:
@@ -6220,12 +4497,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_304
       rect:
@@ -6240,12 +4511,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_305
       rect:
@@ -6260,12 +4525,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_306
       rect:
@@ -6280,12 +4539,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_307
       rect:
@@ -6300,12 +4553,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_308
       rect:
@@ -6320,12 +4567,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_309
       rect:
@@ -6340,12 +4581,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_310
       rect:
@@ -6360,12 +4595,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_311
       rect:
@@ -6380,12 +4609,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_312
       rect:
@@ -6400,12 +4623,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_313
       rect:
@@ -6420,12 +4637,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_314
       rect:
@@ -6440,12 +4651,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_315
       rect:
@@ -6460,12 +4665,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_316
       rect:
@@ -6480,12 +4679,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_317
       rect:
@@ -6500,12 +4693,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_318
       rect:
@@ -6520,12 +4707,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_319
       rect:
@@ -6540,12 +4721,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_320
       rect:
@@ -6560,12 +4735,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_321
       rect:
@@ -6580,12 +4749,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_322
       rect:
@@ -6600,12 +4763,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_323
       rect:
@@ -6620,12 +4777,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_324
       rect:
@@ -6640,12 +4791,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_325
       rect:
@@ -6660,12 +4805,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_326
       rect:
@@ -6680,12 +4819,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_327
       rect:
@@ -6700,12 +4833,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_328
       rect:
@@ -6720,12 +4847,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_329
       rect:
@@ -6740,12 +4861,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_330
       rect:
@@ -6760,12 +4875,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_331
       rect:
@@ -6780,12 +4889,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_332
       rect:
@@ -6800,12 +4903,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_333
       rect:
@@ -6820,12 +4917,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_334
       rect:
@@ -6840,12 +4931,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_335
       rect:
@@ -6860,12 +4945,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_336
       rect:
@@ -6880,12 +4959,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_337
       rect:
@@ -6900,12 +4973,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_338
       rect:
@@ -6920,12 +4987,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_339
       rect:
@@ -6940,12 +5001,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_340
       rect:
@@ -6960,12 +5015,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_341
       rect:
@@ -6980,12 +5029,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_342
       rect:
@@ -7000,12 +5043,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_343
       rect:
@@ -7020,12 +5057,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_344
       rect:
@@ -7040,12 +5071,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_345
       rect:
@@ -7060,12 +5085,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_346
       rect:
@@ -7080,12 +5099,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_347
       rect:
@@ -7100,12 +5113,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_348
       rect:
@@ -7120,12 +5127,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_349
       rect:
@@ -7140,12 +5141,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_350
       rect:
@@ -7160,12 +5155,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_351
       rect:
@@ -7180,12 +5169,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_352
       rect:
@@ -7200,12 +5183,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_353
       rect:
@@ -7220,12 +5197,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_354
       rect:
@@ -7240,12 +5211,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_355
       rect:
@@ -7260,12 +5225,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_356
       rect:
@@ -7280,12 +5239,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_357
       rect:
@@ -7300,12 +5253,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_358
       rect:
@@ -7320,12 +5267,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_359
       rect:
@@ -7340,12 +5281,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_360
       rect:
@@ -7360,12 +5295,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_361
       rect:
@@ -7380,12 +5309,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_362
       rect:
@@ -7400,12 +5323,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_363
       rect:
@@ -7420,12 +5337,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_364
       rect:
@@ -7440,12 +5351,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_365
       rect:
@@ -7460,12 +5365,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_366
       rect:
@@ -7480,12 +5379,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_367
       rect:
@@ -7500,12 +5393,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_368
       rect:
@@ -7520,12 +5407,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_369
       rect:
@@ -7540,12 +5421,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_370
       rect:
@@ -7560,12 +5435,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_371
       rect:
@@ -7580,12 +5449,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_372
       rect:
@@ -7600,12 +5463,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_373
       rect:
@@ -7620,12 +5477,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_374
       rect:
@@ -7640,12 +5491,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_375
       rect:
@@ -7660,12 +5505,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_376
       rect:
@@ -7680,12 +5519,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_377
       rect:
@@ -7700,12 +5533,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_378
       rect:
@@ -7720,12 +5547,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_379
       rect:
@@ -7740,12 +5561,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_380
       rect:
@@ -7760,12 +5575,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_381
       rect:
@@ -7780,12 +5589,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_382
       rect:
@@ -7800,12 +5603,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_383
       rect:
@@ -7820,12 +5617,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_384
       rect:
@@ -7840,12 +5631,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_385
       rect:
@@ -7860,12 +5645,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_386
       rect:
@@ -7880,12 +5659,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_387
       rect:
@@ -7900,12 +5673,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_388
       rect:
@@ -7920,12 +5687,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_389
       rect:
@@ -7940,12 +5701,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_390
       rect:
@@ -7960,12 +5715,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_391
       rect:
@@ -7980,12 +5729,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_392
       rect:
@@ -8000,12 +5743,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_393
       rect:
@@ -8020,12 +5757,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_394
       rect:
@@ -8040,12 +5771,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_116
       rect:
@@ -8060,12 +5785,6 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     - serializedVersion: 2
       name: Gladiator_Pack_Unity3d_48
       rect:
@@ -8080,23 +5799,9 @@ TextureImporter:
       outline: []
       physicsShape: []
       tessellationDetail: 0
-      bones: []
-      spriteID: 
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     physicsShape: []
-    bones: []
-    spriteID: 
-    vertices: []
-    indices: 
-    edges: []
-    weights: []
   spritePackingTag: 
-  pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
