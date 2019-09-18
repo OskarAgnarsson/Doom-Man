@@ -5,18 +5,22 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float playerspeed;
-    public float roll_thrust;
+    public bool is_rolling;
 
+    bool testvar;
     private float mvx;
     private float mvy;
+    private float roll_time;
     private Vector2 mv;
     private Rigidbody2D playerbody;
     
 
     void Awake()
     {
-        roll_thrust = 5f;
+        testvar = false;
+        is_rolling = false;
         playerspeed = 5f;
+        roll_time = 0.5f;
     }
     // Start is called before the first frame update
     void Start()
@@ -27,22 +31,31 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        roll_thrust = 100f;
-        mvx = Input.GetAxis("Horizontal");
-        mvy = Input.GetAxis("Vertical");
+        mvx = Input.GetAxis("Horizontal") * playerspeed;
+        mvy = Input.GetAxis("Vertical") * playerspeed;
         mv = new Vector2(mvx,mvy);
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            for(int i = 0;i < 5;i++)
-            {
-                transform.position = Vector2.MoveTowards(playerbody.position,playerbody.position + mv,roll_thrust * Time.deltaTime);
-            }
+            testvar = true;
+            playerspeed = 10f;
+            is_rolling = true;
+        }
+        if(roll_time <= 0f)
+        {
+            playerspeed = 5f;
+            roll_time = 0.5f;
+            is_rolling = false;
+        }
+        if(roll_time > 0f && is_rolling)
+        {
+            roll_time -= Time.deltaTime;
         }
     }
 
     void FixedUpdate()
     {
-        playerbody.MovePosition(playerbody.position + mv * playerspeed * Time.fixedDeltaTime);
-        
+        Debug.Log(testvar);
+        Debug.Log(mv*Time.fixedDeltaTime);
+        playerbody.MovePosition(playerbody.position +  mv *  Time.fixedDeltaTime);
     }
 }
