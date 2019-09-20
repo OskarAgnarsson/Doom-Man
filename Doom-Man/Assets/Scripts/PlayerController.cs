@@ -7,10 +7,11 @@ public class PlayerController : MonoBehaviour
     public float playerspeed;
     public bool is_rolling;
 
-    bool testvar;
+    private bool testvar;
     private float original_playerspeed;
     private float mvx;
     private float mvy;
+    private Camera cam;
     [SerializeField] private float roll_time;
     private float original_roll_time;
     [SerializeField] private float roll_modifier;
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerbody = gameObject.GetComponent<Rigidbody2D>();
+        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -38,6 +40,7 @@ public class PlayerController : MonoBehaviour
     {
         mvInputs();
         roll();
+        Debug.Log(cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position);
     }
 
     void FixedUpdate()
