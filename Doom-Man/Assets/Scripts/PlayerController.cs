@@ -4,17 +4,27 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //Normal Public Vars
     public float playerspeed;
     public bool is_rolling;
+    public float mouseangle;
 
+    //Unity Specific Public Vars
+    public GameObject mouseangletracker;
+
+    //Normal Private Vars
     private bool testvar;
     private float original_playerspeed;
     private float mvx;
     private float mvy;
-    private Camera cam;
     [SerializeField] private float roll_time;
     private float original_roll_time;
     [SerializeField] private float roll_modifier;
+
+    //Unity Specific Private Vars
+    private Camera cam;
+    private Vector2 PlayerToMousetracker;
+    private Vector3 PlayerToMouse;
     private Vector2 mv;
     private Rigidbody2D playerbody;
     
@@ -40,7 +50,14 @@ public class PlayerController : MonoBehaviour
     {
         mvInputs();
         roll();
-        Debug.Log(cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position);
+        PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
+        mouseangle = Vector2.Angle(PlayerToMousetracker,cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position);
+        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;
+        if(PlayerToMouse.y < 0)
+        {
+            mouseangle = -mouseangle;
+        }
+        Debug.Log(mouseangle);
     }
 
     void FixedUpdate()
