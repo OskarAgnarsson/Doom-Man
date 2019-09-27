@@ -19,7 +19,7 @@ AnimatorController:
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 0}
   - m_Name: FaceNorth
     m_Type: 4
@@ -192,7 +192,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceWest
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102602815089569300}
   m_Solo: 0
@@ -354,7 +360,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceSouth
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102536489228570696}
   m_Solo: 0
@@ -404,7 +416,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceNorth
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102346867983736550}
   m_Solo: 0
@@ -431,7 +449,7 @@ AnimatorStateTransition:
     m_ConditionEvent: FaceSouth
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceNorth
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102390242002499802}
@@ -711,7 +729,7 @@ AnimatorStateTransition:
     m_ConditionEvent: FaceWest
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceNorth
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102982009312951680}
@@ -874,7 +892,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceWest
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102602815089569300}
   m_Solo: 0
@@ -899,6 +923,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceNorth
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102346867983736550}
@@ -977,7 +1004,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceSouth
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102536489228570696}
   m_Solo: 0
@@ -1027,7 +1060,13 @@ AnimatorStateTransition:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 
-  m_Conditions: []
+  m_Conditions:
+  - m_ConditionMode: 1
+    m_ConditionEvent: FaceEast
+    m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: IsWalking
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102592676234987828}
   m_Solo: 0
@@ -1054,7 +1093,7 @@ AnimatorStateTransition:
     m_ConditionEvent: FaceSouth
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceEast
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102390242002499802}
@@ -1110,7 +1149,7 @@ AnimatorStateTransition:
     m_ConditionEvent: FaceEast
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceNorth
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102686598126427294}
@@ -1194,7 +1233,7 @@ AnimatorStateTransition:
     m_ConditionEvent: FaceNorth
     m_EventTreshold: 0
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceEast
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102974241777523092}
@@ -1219,7 +1258,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 2
-    m_ConditionEvent: FaceEast
+    m_ConditionEvent: IsWalking
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: FaceWest
