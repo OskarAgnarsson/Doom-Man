@@ -5,31 +5,46 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Normal Public Vars
-    public float playerspeed;
-    public bool is_rolling;
-    public float mouseangle;
-    public string WeaponType;
+        public float playerspeed;
+        public Dictionary<string,Dictionary<string,float>> Weapons = new Dictionary<string,Dictionary<string,float>>()
+        {
+            {
+                "Pistol",new Dictionary<string,float>()
+                {
+                    {"FireRate",2.5f},
+                    {"BulletCount",1f}
+                }
+            }
+        };
+        public bool is_rolling;
+        public float mouseangle;
+        public string WeaponType;
+    
 
     //Unity Specific Public Vars
-    public GameObject pistol_bullet;
-    public GameObject mouseangletracker;
+        public GameObject pistol_bullet;
+        public GameObject mouseangletracker;
 
     //Normal Private Vars
-    private bool testvar;
-    private float playermouseangle;
-    private float original_playerspeed;
-    private float mvx;
-    private float mvy;
-    [SerializeField] private float roll_time;
-    private float original_roll_time;
-    [SerializeField] private float roll_modifier;
+            private float playermouseangle;
+        //Movement Vars
+            private float mvx;
+            private float mvy;
+        //Rolling/Dodgeing Vars
+            private float original_playerspeed;
+            [SerializeField] private float roll_time;
+            private float original_roll_time;
+            [SerializeField] private float roll_modifier;
 
     //Unity Specific Private Vars
-    private Camera cam;
-    private Vector2 PlayerToMousetracker;
-    private Vector3 PlayerToMouse;
-    private Vector2 mv;
-    private Rigidbody2D playerbody;
+        //Camera
+            private Camera cam;
+        //Mouse Vectors
+            private Vector2 PlayerToMousetracker;
+            private Vector3 PlayerToMouse;
+        //Movement
+            private Vector2 mv;
+            private Rigidbody2D playerbody;
     
 
     void Awake()
@@ -54,16 +69,8 @@ public class PlayerController : MonoBehaviour
         mvInputs();
         roll();
         shoot(WeaponType);
-
-        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;
-        PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
-        mouseangle = Vector2.Angle(PlayerToMousetracker,PlayerToMouse);
-        playermouseangle = Mathf.Atan2(PlayerToMouse.x,PlayerToMouse.y) * Mathf.Rad2Deg;
+        aim();
         
-        if(PlayerToMouse.y < 0)
-        {
-            mouseangle = -mouseangle;
-        }
         Debug.Log(mouseangle);
         Debug.Log(Input.GetAxis("Fire1"));
     }
@@ -102,14 +109,28 @@ public class PlayerController : MonoBehaviour
             roll_time -= Time.deltaTime;
         }
     }
+
+    void aim()
+    {
+        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;
+        PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
+        mouseangle = Vector2.Angle(PlayerToMousetracker,PlayerToMouse);
+        playermouseangle = Mathf.Atan2(PlayerToMouse.x,PlayerToMouse.y) * Mathf.Rad2Deg;
+        
+        if(PlayerToMouse.y < 0)
+        {
+            mouseangle = -mouseangle;
+        }
+    }
+
     void shoot(string weapon_type)
     {
         if(Input.GetAxis("Fire1") == 1)
         {
             if(weapon_type == "Pistol")
             {
-                Debug.Log("yes");
-                Instantiate(pistol_bullet,transform.position,Quaternion.AngleAxis(playermouseangle,Vector3.back));
+                Quaternion RotationOffset = new Quaternion(0,0,Random.Range(0.05f,0.2f),1);
+                Instantiate(pistol_bullet,transform.position,Quaternion.AngleAxis(playermouseangle,Vector3.back)*RotationOffset);
             }
         }
     }
