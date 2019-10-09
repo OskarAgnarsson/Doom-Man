@@ -6,19 +6,10 @@ public class PlayerController : MonoBehaviour
 {
     //Normal Public Vars
         public float playerspeed;
-        public Dictionary<string,Dictionary<string,float>> Weapons = new Dictionary<string,Dictionary<string,float>>()
-        {
-            {
-                "Pistol",new Dictionary<string,float>()
-                {
-                    {"FireRate",2.5f},
-                    {"BulletCount",1f}
-                }
-            }
-        };
         public bool is_rolling;
         public float mouseangle;
         public string WeaponType;
+        public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" }; 
     
 
     //Unity Specific Public Vars
@@ -26,7 +17,28 @@ public class PlayerController : MonoBehaviour
         public GameObject mouseangletracker;
 
     //Normal Private Vars
-            private float playermouseangle;
+    private int inventoryIndex;
+        Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
+            {
+                {
+                    "Pistol",new Dictionary<string,float>()
+                    {
+                        {"FireRate",2.5f},
+                        {"BulletCount",1f}
+                    }
+                },
+                {
+                    "Shotgun",new Dictionary<string, float>()
+                    {
+                        {"FireRate",2.5f},
+                        {"BulletCount",5f}
+                    }
+                }
+            };
+        private float playermouseangle;
+            
+        //Shooting vars
+            private float NextShot;
         //Movement Vars
             private float mvx;
             private float mvy;
@@ -49,6 +61,8 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        inventoryIndex = 0;
+        NextShot = Time.time;
         is_rolling = false;
         playerspeed = 5f;
         original_playerspeed = playerspeed;
@@ -68,11 +82,10 @@ public class PlayerController : MonoBehaviour
     {
         mvInputs();
         roll();
+        SwitchWeapons();
         shoot(WeaponType);
         aim();
-        
-        Debug.Log(mouseangle);
-        Debug.Log(Input.GetAxis("Fire1"));
+        Debug.Log(Input.mouseScrollDelta);
     }
 
     void FixedUpdate()
@@ -125,12 +138,41 @@ public class PlayerController : MonoBehaviour
 
     void shoot(string weapon_type)
     {
-        if(Input.GetAxis("Fire1") == 1)
+        float firerate = Weapons[weapon_type]["FireRate"];
+        float bulletcount = Weapons[weapon_type]["BulletCount"];
+        if (Input.GetAxis("Fire1") == 1 && Time.time > NextShot && firerate > 0)
         {
-            if(weapon_type == "Pistol")
+            for (float i = 0; i < bulletcount; i++)
             {
-                Quaternion RotationOffset = new Quaternion(0,0,Random.Range(0.05f,0.2f),1);
-                Instantiate(pistol_bullet,transform.position,Quaternion.AngleAxis(playermouseangle,Vector3.back)*RotationOffset);
+                Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(0.05f, 0.2f), 1);
+                Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);
+            }
+            NextShot = Time.time + firerate;
+        }
+    }
+    void SwitchWeapons()
+    {
+        WeaponType = inventory[inventoryIndex];
+        if (Input.mouseScrollDelta.y < 0)
+        {
+            if (inventoryIndex == 0)
+            {
+                inventoryIndex = inventory.Count - 1;
+            }
+            else
+            {
+                inventoryIndex = inventoryIndex - 1;
+            }
+        }
+        else if (Input.mouseScrollDelta.y > 0)
+        {
+            if (inventoryIndex == inventory.Count - 1)
+            {
+                inventoryIndex = 0;
+            }
+            else
+            {
+                inventoryIndex = inventoryIndex + 1;
             }
         }
     }
