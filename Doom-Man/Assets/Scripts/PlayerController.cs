@@ -4,21 +4,16 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    //Normal Public Vars
+    //Normal Public Vars 
         public float playerspeed;
         public bool is_rolling;
         public float mouseangle;
         public string WeaponType;
-        public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" }; 
-    
-
-    //Unity Specific Public Vars
-        public GameObject pistol_bullet;
-        public GameObject mouseangletracker;
-
-    //Normal Private Vars
-    private int inventoryIndex;
-        Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
+        public float NextShot;
+    public float firerate;
+        public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
+        public int inventoryIndex;
+        public Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
             {
                 {
                     "Pistol",new Dictionary<string,float>()
@@ -35,10 +30,18 @@ public class PlayerController : MonoBehaviour
                     }
                 }
             };
+
+
+    //Unity Specific Public Vars
+        public GameObject pistol_bullet;
+        public GameObject mouseangletracker;
+        public GameObject Gun;
+        public Animator gunAnim;
+        public SpriteRenderer GunSprite;
+
+    //Normal Private Vars
         private float playermouseangle;
-            
-        //Shooting vars
-            private float NextShot;
+        private float bulletcount;
         //Movement Vars
             private float mvx;
             private float mvy;
@@ -74,6 +77,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         playerbody = gameObject.GetComponent<Rigidbody2D>();
+        GunSprite = gameObject.GetComponent<SpriteRenderer>();
         cam = Camera.main;
     }
 
@@ -83,9 +87,9 @@ public class PlayerController : MonoBehaviour
         mvInputs();
         roll();
         SwitchWeapons();
-        shoot(WeaponType);
         aim();
-        Debug.Log(Input.mouseScrollDelta);
+        firerate = Weapons[WeaponType]["FireRate"];
+        bulletcount = Weapons[WeaponType]["BulletCount"];
     }
 
     void FixedUpdate()
@@ -135,20 +139,14 @@ public class PlayerController : MonoBehaviour
             mouseangle = -mouseangle;
         }
     }
-
-    void shoot(string weapon_type)
+    public void shoot(string weapon_type)
     {
-        float firerate = Weapons[weapon_type]["FireRate"];
-        float bulletcount = Weapons[weapon_type]["BulletCount"];
-        if (Input.GetAxis("Fire1") == 1 && Time.time > NextShot && firerate > 0)
+        for (float i = 0; i < bulletcount; i++)
         {
-            for (float i = 0; i < bulletcount; i++)
-            {
-                Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(0.05f, 0.2f), 1);
-                Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);
-            }
-            NextShot = Time.time + firerate;
+            Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(0.05f, 0.2f), 1);
+            Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);
         }
+        NextShot = Time.time + firerate;
     }
     void SwitchWeapons()
     {

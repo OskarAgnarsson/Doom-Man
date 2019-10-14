@@ -1,11 +1,10 @@
 fileFormatVersion: 2
-guid: 3fc52022e5a5a974db658028c3f67fd1
+guid: 3e4a5fa461c700845afd64f433c7118d
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Pistol_0
-    21300002: Pistol_1
-    21300004: Pistol_2
-    21300006: Pistol_3
+    21300000: Shotgun_0
+    21300002: Shotgun_1
+    21300004: Shotgun_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -54,7 +53,7 @@ TextureImporter:
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: 0
+  spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -110,7 +109,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pistol_0
+      name: Shotgun_0
       rect:
         serializedVersion: 2
         x: 0
@@ -118,19 +117,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9b5a18009dbda147a50ae2bdab25c74
+      spriteID: abefcf8ed4e79ed48aa595f237a2922f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistol_1
+      name: Shotgun_1
       rect:
         serializedVersion: 2
         x: 32
@@ -138,19 +137,19 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19f00ee372260b143bc367f349d66aec
+      spriteID: 3c258636546063f4299f6e3acfe5eee8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Pistol_2
+      name: Shotgun_2
       rect:
         serializedVersion: 2
         x: 64
@@ -158,72 +157,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891b144296290a44da5083155133c048
+      spriteID: 3ad9f2b45e5dfee4ba72df1c71819161
       vertices: []
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: Pistol_3
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a277eb48b81a3eb4a934154c9c89625e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    outline:
-    - - {x: -39, y: 4}
-      - {x: -56, y: 4}
-      - {x: -59, y: 2}
-      - {x: -59, y: -12}
-      - {x: -56, y: -13}
-      - {x: -48, y: -13}
-      - {x: -41, y: -8}
-      - {x: -38, y: -5}
-      - {x: -38, y: 1}
-    - - {x: -27, y: 4}
-      - {x: -27, y: -13}
-      - {x: -12, y: -13}
-      - {x: -7, y: -11}
-      - {x: -2, y: -3}
-      - {x: -2, y: 3}
-      - {x: -6, y: 4}
-    - - {x: 8, y: 4}
-      - {x: 5, y: 2}
-      - {x: 5, y: -13}
-      - {x: 28, y: -13}
-      - {x: 33, y: -5}
-      - {x: 33, y: 2}
-      - {x: 32, y: 4}
-    - - {x: 40, y: 4}
-      - {x: 37, y: 2}
-      - {x: 37, y: -12}
-      - {x: 39, y: -13}
-      - {x: 49, y: -13}
-      - {x: 62, y: -4}
-      - {x: 62, y: 0}
-      - {x: 59, y: 4}
+    outline: []
     physicsShape: []
     bones: []
-    spriteID: e5785fe2ba387d343932b1a02dcb0e4c
+    spriteID: ee93c56ea072d024ea18349d6fd5c764
     vertices: []
     indices: 
     edges: []
