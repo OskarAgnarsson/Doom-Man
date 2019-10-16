@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
                 {
                     "Pistol",new Dictionary<string,float>()
                     {
-                        {"FireRate",2.5f},
+                        {"FireRate",0.7f},
                         {"BulletCount",1f}
                     }
                 },
