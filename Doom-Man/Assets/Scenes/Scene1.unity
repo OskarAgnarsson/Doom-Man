@@ -422,5 +422,61 @@ PrefabInstance:
       propertyPath: mouseangletracker
       value: 
       objectReference: {fileID: 1001293693}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.272
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.019
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.49510512
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023808, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47943392
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_SpriteSortPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_DrawMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 627399acbf68175468c572a36a0a785e, type: 3}

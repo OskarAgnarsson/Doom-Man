@@ -10,7 +10,8 @@ public class PlayerController : MonoBehaviour
         public float mouseangle;
         public string WeaponType;
         public float NextShot;
-    public float firerate;
+        public float playermouseangle;
+        public float firerate;
         public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
         public int inventoryIndex;
         public Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour
 
 
     //Unity Specific Public Vars
+        //Camera
+            public Camera cam;
         public GameObject pistol_bullet;
         public GameObject mouseangletracker;
         public GameObject Gun;
@@ -40,7 +43,6 @@ public class PlayerController : MonoBehaviour
         public SpriteRenderer GunSprite;
 
     //Normal Private Vars
-        private float playermouseangle;
         private float bulletcount;
         //Movement Vars
             private float mvx;
@@ -52,8 +54,6 @@ public class PlayerController : MonoBehaviour
             [SerializeField] private float roll_modifier;
 
     //Unity Specific Private Vars
-        //Camera
-            private Camera cam;
         //Mouse Vectors
             private Vector2 PlayerToMousetracker;
             private Vector3 PlayerToMouse;
