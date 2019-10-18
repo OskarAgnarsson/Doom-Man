@@ -6,6 +6,8 @@ public class GunControlls : MonoBehaviour
 {
     int count = 0;
     public PlayerController player;
+    public Transform right;
+    public Transform left;
     Animator gunAnim;
     Camera cam;
     SpriteRenderer gunrenderer;
@@ -28,24 +30,32 @@ public class GunControlls : MonoBehaviour
         if (player.mouseangle > 90 || player.mouseangle < -90)
         {
             
-            if (count < 1 && player.mouseangle < -90 || player.mouseangle > 90)
+            if (((player.mouseangle > 90 && player.mouseangle <= 180) || (player.mouseangle < -90 && player.mouseangle >= -180)))
             {
-                transform.position -= new Vector3(transform.position.x-.470f,0.0f,0.0f);
-                count += 1;
+                transform.position = left.position;
             }
-            if (player.mouseangle > 90 )
+            if ((player.mouseangle < 90 && player.mouseangle >= 0)|| (player.mouseangle > -90 && player.mouseangle <= 0))
             {
                 gunrenderer.flipY = false;
             }
-            else
+            else if ((player.mouseangle > 90 && player.mouseangle <= 180) || (player.mouseangle < -90 && player.mouseangle >= -180))
             {
                 gunrenderer.flipY = true;
             }
         }
         else 
         {
-            count = 0;
-            transform.position = original_pos;
+            if (((player.mouseangle < 90 && player.mouseangle >= 0)|| (player.mouseangle > -90 && player.mouseangle <= 0))) {
+                transform.position = right.position;
+            }
+            if ((player.mouseangle < 90 && player.mouseangle >= 0)|| (player.mouseangle > -90 && player.mouseangle <= 0))
+            {
+                gunrenderer.flipY = false;
+            }
+            else if ((player.mouseangle > 90 && player.mouseangle <= 180) || (player.mouseangle < -90 && player.mouseangle >= -180))
+            {
+                gunrenderer.flipY = true;
+            }
         }
     }
     void shoot()
@@ -56,4 +66,5 @@ public class GunControlls : MonoBehaviour
     {
         gunAnim.ResetTrigger("Shoot");
     }
+
 }
