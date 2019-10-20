@@ -9,16 +9,16 @@ public class CrosshairController : MonoBehaviour
 
     private void Start()
     {
-        Cursor.visible = false;
+        Cursor.visible = false;//Lætur músina verða ósýnilega
     }
 
     void FixedUpdate()
     {
-        if (Cursor.visible)
+        if (Cursor.visible)//Tryggir það að músin sé ósýnileg
         {
             Cursor.visible = false;
         }
-        mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
-        transform.position = mousePos;
+        mousePos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));//Staðsetning músar
+        transform.position = mousePos;//Færir crosshair með músinni
     }
 }

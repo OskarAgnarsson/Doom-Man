@@ -19,6 +19,7 @@ public class Animation_Controlls : MonoBehaviour
     void Update()
     {
         float mouseAngle = playerscript.mouseangle;
+        //Stjórnar því hvort player er að rúlla
         if (playerscript.is_rolling == true)
         {
             playeranim.SetTrigger("roll");
@@ -27,12 +28,16 @@ public class Animation_Controlls : MonoBehaviour
         {
             playeranim.ResetTrigger("roll");
         }
+
+        //Stjórnar hvort player labbar eða ekki
         if (Input.GetAxis("Vertical") != 0 || Input.GetAxis("Horizontal") != 0) {
             playeranim.SetBool("IsWalking",true);
         } 
         else {
             playeranim.SetBool("IsWalking",false);
         }
+
+        //Stjórnar í hvaða átt player snýr
         if (mouseAngle >= -45 && mouseAngle <=45) {
             playeranim.SetBool("FaceEast",true);
             playeranim.SetBool("FaceNorth",false);

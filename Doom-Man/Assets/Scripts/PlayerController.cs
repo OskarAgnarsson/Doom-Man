@@ -126,32 +126,34 @@ public class PlayerController : MonoBehaviour
             roll_time -= Time.deltaTime;
         }
     }
-
+    //Miðar
     void aim()
     {
-        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;
+        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;//Mismunur mouseposition og players
         PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
         mouseangle = Vector2.Angle(PlayerToMousetracker,PlayerToMouse);
         playermouseangle = Mathf.Atan2(PlayerToMouse.x,PlayerToMouse.y) * Mathf.Rad2Deg;
         
-        if(PlayerToMouse.y < 0)
+        if(PlayerToMouse.y < 0)//Breytir mouseangle í mínus ef músin er undir player, leyfir okkur að nota mouseangle sem 360 gráður í staðinn fyrir 180
         {
             mouseangle = -mouseangle;
         }
     }
+
+    //Skýtur
     public void shoot(string weapon_type)
     {
         for (float i = 0; i < bulletcount; i++)
         {
             Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(0.05f, 0.2f), 1);
-            Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);
+            Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);//Býr til Bullet
         }
         NextShot = Time.time + firerate;
     }
     void SwitchWeapons()
     {
         WeaponType = inventory[inventoryIndex];
-        if (Input.mouseScrollDelta.y < 0)
+        if (Input.mouseScrollDelta.y < 0)//Skiptir um byssu með því að scrolla
         {
             if (inventoryIndex == 0)
             {

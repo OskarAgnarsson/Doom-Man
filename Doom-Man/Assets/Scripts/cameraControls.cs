@@ -8,6 +8,6 @@ public class cameraControls : MonoBehaviour
     
     void LateUpdate()
     {
-        transform.position = new Vector3(target.gameObject.transform.position.x,target.gameObject.transform.position.y,-10);
+        transform.position = new Vector3(target.gameObject.transform.position.x,target.gameObject.transform.position.y,-10);//Færir camera með player
     }
 }
