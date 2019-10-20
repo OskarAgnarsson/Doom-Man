@@ -8,6 +8,7 @@ TagManager:
   - PlayerSouth
   - PlayerEast
   - PlayerWest
+  - Walls
   layers:
   - Default
   - TransparentFX

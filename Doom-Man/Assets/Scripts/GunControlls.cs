@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class GunControlls : MonoBehaviour
 {
-    int count = 0;
     public PlayerController player;
     public Transform right;
     public Transform left;
@@ -58,6 +57,8 @@ public class GunControlls : MonoBehaviour
             }
         }
     }
+
+
     void shoot()
     {
         player.shoot(player.WeaponType);

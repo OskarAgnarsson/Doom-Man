@@ -1,31 +1,32 @@
 fileFormatVersion: 2
-guid: 6379d13f0cee18d41808ddb531da3fc2
+guid: 481fe5bf2c59f0f4192e52c0820674f7
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Doom-Man_0
-    21300002: Doom-Man_1
-    21300004: Doom-Man_2
-    21300006: Doom-Man_3
-    21300008: Doom-Man_4
-    21300010: Doom-Man_5
-    21300012: Doom-Man_6
-    21300014: Doom-Man_7
-    21300016: Doom-Man_8
-    21300018: Doom-Man_9
-    21300020: Doom-Man_10
-    21300022: Doom-Man_11
-    21300024: Doom-Man_12
-    21300026: Doom-Man_13
-    21300028: Doom-Man_14
-    21300030: Doom-Man_15
-    21300032: Doom-Man_16
-    21300034: Doom-Man_17
-    21300036: Doom-Man_18
-    21300038: Doom-Man_19
-    21300040: Doom-Man_20
-    21300042: Doom-Man_21
-    21300044: Doom-Man_22
-    21300046: Doom-Man_23
+    21300000: FacilityTilemap_0
+    21300002: FacilityTilemap_1
+    21300004: FacilityTilemap_2
+    21300006: FacilityTilemap_3
+    21300008: FacilityTilemap_4
+    21300010: FacilityTilemap_5
+    21300012: FacilityTilemap_6
+    21300014: FacilityTilemap_7
+    21300016: FacilityTilemap_8
+    21300018: FacilityTilemap_9
+    21300020: FacilityTilemap_10
+    21300022: FacilityTilemap_11
+    21300024: FacilityTilemap_12
+    21300026: FacilityTilemap_13
+    21300028: FacilityTilemap_14
+    21300030: FacilityTilemap_15
+    21300032: FacilityTilemap_16
+    21300034: FacilityTilemap_17
+    21300036: FacilityTilemap_18
+    21300038: FacilityTilemap_19
+    21300040: FacilityTilemap_20
+    21300042: FacilityTilemap_21
+    21300044: FacilityTilemap_22
+    21300046: FacilityTilemap_23
+    21300048: FacilityTilemap_24
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -108,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Doom-Man_0
+      name: FacilityTilemap_0
       rect:
         serializedVersion: 2
-        x: 11
-        y: 100
-        width: 9
-        height: 17
+        x: 8
+        y: 136
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -122,19 +123,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2a955a5c256b8a44920adcef68324d6
+      spriteID: 84b37292a1538584d934799db379f55a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_1
+      name: FacilityTilemap_1
       rect:
         serializedVersion: 2
-        x: 43
-        y: 100
-        width: 10
-        height: 17
+        x: 40
+        y: 136
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -142,19 +143,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a8c7179eaf914b40b8120b52d73259a
+      spriteID: c850704a2a056e442ade35fd10e7aa52
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_2
+      name: FacilityTilemap_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 100
-        width: 9
-        height: 17
+        x: 72
+        y: 136
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,19 +163,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 717bbb71e9655a546b72cadf5e4beb4a
+      spriteID: 3a5c75a6357fe7e43a319dcb471defaa
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_3
+      name: FacilityTilemap_3
       rect:
         serializedVersion: 2
-        x: 107
-        y: 100
-        width: 9
-        height: 17
+        x: 104
+        y: 136
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,19 +183,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8495eb9be12244b4981b4b7d21b59526
+      spriteID: b79eb7f1e9ba4e745be4adb43a0739f5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_4
+      name: FacilityTilemap_4
       rect:
         serializedVersion: 2
-        x: 139
-        y: 100
-        width: 9
-        height: 17
+        x: 136
+        y: 136
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,19 +203,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbec8ccd95d3c9c4f90c808bd7ae148c
+      spriteID: 3f78cf5941eaa4b43b4fddcf44405332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_5
+      name: FacilityTilemap_5
       rect:
         serializedVersion: 2
-        x: 171
-        y: 100
-        width: 10
-        height: 17
+        x: 8
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,19 +223,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35bbc9f5957467b49b28a48a637da0e8
+      spriteID: e559c60bdb87e1f478699a84e27cbc83
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_6
+      name: FacilityTilemap_6
       rect:
         serializedVersion: 2
-        x: 11
-        y: 68
-        width: 9
-        height: 17
+        x: 40
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -242,19 +243,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d7d84398f537b54aa0c010781fc995e
+      spriteID: 3ed60800e9334a942b266b04675c9e7f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_7
+      name: FacilityTilemap_7
       rect:
         serializedVersion: 2
-        x: 43
-        y: 68
-        width: 9
-        height: 17
+        x: 72
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,19 +263,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb3b4c24f8bc82e4a9b8112abd6d204f
+      spriteID: bf48dc5243775b64ea1217cc4d72c780
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_8
+      name: FacilityTilemap_8
       rect:
         serializedVersion: 2
-        x: 75
-        y: 68
-        width: 9
-        height: 17
+        x: 104
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -282,19 +283,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 11a03b7e2dc330c449be569a95266af2
+      spriteID: ee57738123e7eab4b834d870bea38d79
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_9
+      name: FacilityTilemap_9
       rect:
         serializedVersion: 2
-        x: 107
-        y: 68
-        width: 9
-        height: 17
+        x: 136
+        y: 104
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,19 +303,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d3109ca26fd836c40bbe9b9bdd8e7398
+      spriteID: 6df6f78218b577d4ca748ed15ef9a19c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_10
+      name: FacilityTilemap_10
       rect:
         serializedVersion: 2
-        x: 139
-        y: 68
-        width: 9
-        height: 17
+        x: 8
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -322,19 +323,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 406960916d9e46e4fb15b5181e7cf6bd
+      spriteID: 48b57846531a2ab41ac4a2bac9399b2f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_11
+      name: FacilityTilemap_11
       rect:
         serializedVersion: 2
-        x: 171
-        y: 68
-        width: 9
-        height: 17
+        x: 40
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -342,19 +343,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03d9c9ce111ac1a48890847c7456bba5
+      spriteID: f6ad5924d05ce73418f130d0a96fba4b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_12
+      name: FacilityTilemap_12
       rect:
         serializedVersion: 2
-        x: 11
-        y: 36
-        width: 9
-        height: 17
+        x: 72
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -362,19 +363,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6972971b2a6a44e40afb3187126757c1
+      spriteID: ec3002259c7428440ac894e4b027f1a2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_13
+      name: FacilityTilemap_13
       rect:
         serializedVersion: 2
-        x: 43
-        y: 36
-        width: 9
-        height: 17
+        x: 104
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,19 +383,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4599d78a2f3525468ed926aef4635c8
+      spriteID: 5a0092888edcf9f4391ae9ee16453286
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_14
+      name: FacilityTilemap_14
       rect:
         serializedVersion: 2
-        x: 75
-        y: 36
-        width: 9
-        height: 17
+        x: 136
+        y: 72
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,19 +403,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e44731754ab595644a85d53a5643ccaa
+      spriteID: c681587dcb2ec1a408b241bba37bd497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_15
+      name: FacilityTilemap_15
       rect:
         serializedVersion: 2
-        x: 107
-        y: 36
-        width: 9
-        height: 17
+        x: 8
+        y: 40
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -422,19 +423,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f4cf992be6e6f84598c094f2271230d
+      spriteID: 52123b648fc79ab4e9b6dae0b40c07db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_16
+      name: FacilityTilemap_16
       rect:
         serializedVersion: 2
-        x: 139
-        y: 36
-        width: 9
-        height: 17
+        x: 40
+        y: 40
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -442,19 +443,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4733e39d33aa4784da4c8554edb322e4
+      spriteID: 56ddb90a3d20b2e47b710d35872aada2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_17
+      name: FacilityTilemap_17
       rect:
         serializedVersion: 2
-        x: 171
-        y: 36
-        width: 9
-        height: 17
+        x: 72
+        y: 40
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -462,19 +463,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8f4e3f51b1b24c45991e5f6fc7ac6d9
+      spriteID: 08f05bc5cdcf3c74eb26358099284bb2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_18
+      name: FacilityTilemap_18
       rect:
         serializedVersion: 2
-        x: 11
-        y: 4
-        width: 10
-        height: 17
+        x: 104
+        y: 40
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -482,19 +483,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07fdb0489a047614483429a91f5cb862
+      spriteID: 5b0a9b087ceb6cc4eb8795a96dbb30ac
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_19
+      name: FacilityTilemap_19
       rect:
         serializedVersion: 2
-        x: 44
-        y: 4
-        width: 9
-        height: 17
+        x: 136
+        y: 40
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -502,19 +503,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b1aaa95d1dbf0c4ea7bc40e15b0d0c3
+      spriteID: cd8ac536937891f4497ca9e4578f18ba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_20
+      name: FacilityTilemap_20
       rect:
         serializedVersion: 2
-        x: 76
-        y: 4
-        width: 9
-        height: 17
+        x: 8
+        y: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,19 +523,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c1c2e6bb209237548a505766ee936983
+      spriteID: 3d65a87558dd3424d99bbb83708f5238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_21
+      name: FacilityTilemap_21
       rect:
         serializedVersion: 2
-        x: 108
-        y: 4
-        width: 9
-        height: 17
+        x: 40
+        y: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -542,19 +543,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c8eefbceb93c9844b9b1e2c7d482fa5c
+      spriteID: 9995a02f7dbcc834980cef202506c1b7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_22
+      name: FacilityTilemap_22
       rect:
         serializedVersion: 2
-        x: 139
-        y: 4
-        width: 10
-        height: 17
+        x: 72
+        y: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -562,19 +563,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fa7d44466819564b8daab2490cb4b8a
+      spriteID: 21572060ab3d32340b906949ad906b5d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doom-Man_23
+      name: FacilityTilemap_23
       rect:
         serializedVersion: 2
-        x: 172
-        y: 4
-        width: 9
-        height: 17
+        x: 104
+        y: 8
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -582,7 +583,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4fd69c171756d49a387b7c1bac8909
+      spriteID: 7013161e6eafa8547a25d2eb34f106b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FacilityTilemap_24
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 8
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b34d7c691eb04d419e0602017465ee4
       vertices: []
       indices: 
       edges: []
@@ -590,7 +611,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2915c58fc1a3659449f73c34d68347d4
+    spriteID: f14c61d39808a0c4d86f0430db4f0b93
     vertices: []
     indices: 
     edges: []
