@@ -9,6 +9,8 @@ TagManager:
   - PlayerEast
   - PlayerWest
   - Walls
+  - Nodes
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Walls
+  - Floors
+  - Player
+  - Enemy
   - 
   - 
   - 
