@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
         public float NextShot;
         public float playermouseangle;
         public float firerate;
+        public float health;
         public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
         public int inventoryIndex;
         public Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
@@ -41,6 +42,7 @@ public class PlayerController : MonoBehaviour
         public GameObject Gun;
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
+        public GameObject Enemy;
 
     //Normal Private Vars
         private float bulletcount;
@@ -60,10 +62,14 @@ public class PlayerController : MonoBehaviour
         //Movement
             private Vector2 mv;
             private Rigidbody2D playerbody;
-    
+        private EnemyBehaviour EnemyBe;
+        
 
     void Awake()
     {
+        EnemyBe = Enemy.gameObject.GetComponent<EnemyBehaviour>();
+        playerbody = gameObject.GetComponent<Rigidbody2D>();
+        GunSprite = gameObject.GetComponent<SpriteRenderer>();
         inventoryIndex = 0;
         NextShot = Time.time;
         is_rolling = false;
@@ -76,8 +82,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        playerbody = gameObject.GetComponent<Rigidbody2D>();
-        GunSprite = gameObject.GetComponent<SpriteRenderer>();
+        health = 100f;
         cam = Camera.main;
     }
 
@@ -173,6 +178,17 @@ public class PlayerController : MonoBehaviour
             else
             {
                 inventoryIndex = inventoryIndex + 1;
+            }
+        }
+    }
+
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            if(EnemyBe != null)
+            {
+                EnemyBe.hit();
             }
         }
     }
