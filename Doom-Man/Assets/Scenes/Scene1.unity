@@ -270,6 +270,7 @@ GameObject:
   - component: {fileID: 905121352}
   - component: {fileID: 905121353}
   - component: {fileID: 905121354}
+  - component: {fileID: 905121355}
   m_Layer: 11
   m_Name: Enemy1
   m_TagString: Enemy
@@ -306,9 +307,9 @@ MonoBehaviour:
   targetCompatibility: {fileID: 0}
   maxAcceleration: -2.5
   rotationSpeed: 360
-  slowdownDistance: 0.6
+  slowdownDistance: 1.2
   pickNextWaypointDist: 0.5
-  endReachedDistance: 0.2
+  endReachedDistance: 1
   alwaysDrawGizmos: 0
   slowWhenNotFacingTarget: 1
   whenCloseToDestination: 0
@@ -473,6 +474,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   AttackCooldown: 10
+--- !u!95 &905121355
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905121346}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6e3110fdbf21c7a47b5342d592361746, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1001293693
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1215,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 627399acbf68175468c572a36a0a785e, type: 3}

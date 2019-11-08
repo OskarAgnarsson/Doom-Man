@@ -21,14 +21,16 @@ public class PlayerController : MonoBehaviour
                     "Pistol",new Dictionary<string,float>()
                     {
                         {"FireRate",0.7f},
-                        {"BulletCount",1f}
+                        {"BulletCount",1f},
+                        {"Bullet dmg",25f}
                     }
                 },
                 {
                     "Shotgun",new Dictionary<string, float>()
                     {
                         {"FireRate",2.5f},
-                        {"BulletCount",5f}
+                        {"BulletCount",5f},
+                        {"Bullet dmg",15f}
                     }
                 }
             };
@@ -155,6 +157,7 @@ public class PlayerController : MonoBehaviour
         }
         NextShot = Time.time + firerate;
     }
+    
     void SwitchWeapons()
     {
         WeaponType = inventory[inventoryIndex];
