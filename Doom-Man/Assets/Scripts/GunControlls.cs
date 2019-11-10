@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GunControlls : MonoBehaviour
 {
+    public float shotcount;
+
     public PlayerController player;
     public Transform right;
     public Transform left;
@@ -19,7 +21,8 @@ public class GunControlls : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0)//Skýtur og bætir við delay
+        shotcount = player.Weapons[player.WeaponType]["Bullets"];
+        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0 && shotcount > 0)//Skýtur og bætir við delay
         {
             gunAnim.SetTrigger("Shoot");
         }
@@ -56,6 +59,11 @@ public class GunControlls : MonoBehaviour
         }
     }
 
+
+    void DetractAmmo()
+    {
+        player.Weapons[player.WeaponType]["Bullets"] = player.Weapons[player.WeaponType]["Bullets"] - 1f;
+    }
 
     void shoot()
     {

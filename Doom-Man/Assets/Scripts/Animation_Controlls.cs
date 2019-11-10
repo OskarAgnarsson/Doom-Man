@@ -5,19 +5,28 @@ using UnityEngine;
 public class Animation_Controlls : MonoBehaviour
 {
     [SerializeField] public GameObject player;
+    public GameObject gun;
+
     private PlayerController playerscript;
     private Animator playeranim;
+    private Animator gunanim;
+    private PlayerController playerct;
+
     
 
     void Start()
     {
         playerscript = player.gameObject.GetComponent<PlayerController>();
         playeranim = player.gameObject.GetComponent<Animator>();
+        gunanim = gun.gameObject.GetComponent<Animator>();
+        playerct = player.gameObject.GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        gunanim.SetBool(playerct.WeaponType, true);
+        gunanim.SetBool(playerct.prevweapon,false);
         float mouseAngle = playerscript.mouseangle;
         //Stjórnar því hvort player er að rúlla
         if (playerscript.is_rolling == true)

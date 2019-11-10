@@ -112,6 +112,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &485222229 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2089023807, guid: 627399acbf68175468c572a36a0a785e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8408409531897786561}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &485222232 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2089023811, guid: 627399acbf68175468c572a36a0a785e,
+    type: 3}
+  m_PrefabInstance: {fileID: 8408409531897786561}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &728855481 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6485912155256891479, guid: 925cd5479b7a4e84cb1ffa6c872e5576,
@@ -240,6 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2000663043}
+  gun: {fileID: 485222229}
 --- !u!4 &813882179
 Transform:
   m_ObjectHideFlags: 0
@@ -1189,6 +1202,16 @@ PrefabInstance:
       propertyPath: Enemy
       value: 
       objectReference: {fileID: 905121346}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: Gun
+      value: 
+      objectReference: {fileID: 485222229}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: gunAnim
+      value: 
+      objectReference: {fileID: 485222232}
     - target: {fileID: 599189150, guid: 627399acbf68175468c572a36a0a785e, type: 3}
       propertyPath: m_Layer
       value: 10

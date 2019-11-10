@@ -12,7 +12,9 @@ public class PlayerController : MonoBehaviour
         public float NextShot;
         public float playermouseangle;
         public float firerate;
+        public float shotcount;
         public float health;
+        public string prevweapon;
         public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
         public int inventoryIndex;
         public Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
@@ -22,7 +24,8 @@ public class PlayerController : MonoBehaviour
                     {
                         {"FireRate",0.7f},
                         {"BulletCount",1f},
-                        {"Bullet dmg",25f}
+                        {"Bullet dmg",25f},
+                        {"Bullets",20f}
                     }
                 },
                 {
@@ -30,7 +33,8 @@ public class PlayerController : MonoBehaviour
                     {
                         {"FireRate",2.5f},
                         {"BulletCount",5f},
-                        {"Bullet dmg",15f}
+                        {"Bullet dmg",15f},
+                        {"Bullets",5f}
                     }
                 }
             };
@@ -97,6 +101,7 @@ public class PlayerController : MonoBehaviour
         aim();
         firerate = Weapons[WeaponType]["FireRate"];
         bulletcount = Weapons[WeaponType]["BulletCount"];
+        Debug.Log(prevweapon);
     }
 
     void FixedUpdate()
@@ -163,6 +168,7 @@ public class PlayerController : MonoBehaviour
         WeaponType = inventory[inventoryIndex];
         if (Input.mouseScrollDelta.y < 0)//Skiptir um byssu með því að scrolla
         {
+            prevweapon = WeaponType;
             if (inventoryIndex == 0)
             {
                 inventoryIndex = inventory.Count - 1;
@@ -174,6 +180,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (Input.mouseScrollDelta.y > 0)
         {
+            prevweapon = WeaponType;
             if (inventoryIndex == inventory.Count - 1)
             {
                 inventoryIndex = 0;
