@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 599189151}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: LeftHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39,7 +39,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1020287389}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 2089023809}
   - component: {fileID: 2089023811}
   - component: {fileID: 2089023810}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 30
   m_Sprite: {fileID: 21300000, guid: 3fc52022e5a5a974db658028c3f67fd1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -172,6 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbac824a7addf6748a31166e1e7ec25f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shotcount: 0
   player: {fileID: 8408409530609238726}
   right: {fileID: 1020287389}
   left: {fileID: 599189151}
@@ -188,7 +189,7 @@ GameObject:
   - component: {fileID: 8408409530609238724}
   - component: {fileID: 8408409530609238726}
   - component: {fileID: 8408409530609238729}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -279,6 +280,9 @@ MonoBehaviour:
   NextShot: 0
   playermouseangle: 0
   firerate: 0
+  shotcount: 0
+  health: 0
+  prevweapon: 
   inventory:
   - Pistol
   - Shotgun
@@ -287,9 +291,10 @@ MonoBehaviour:
   pistol_bullet: {fileID: 3536679771708400080, guid: 74211188490b0564b8ade2bd1feb7526,
     type: 3}
   mouseangletracker: {fileID: 0}
-  Gun: {fileID: 0}
-  gunAnim: {fileID: 0}
+  Gun: {fileID: 2089023807}
+  gunAnim: {fileID: 2089023811}
   GunSprite: {fileID: 0}
+  Enemy: {fileID: 0}
   roll_time: 0
   roll_modifier: 0
 --- !u!95 &8408409530609238729
@@ -321,7 +326,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8408409531397792605}
   - component: {fileID: 8408409531397792604}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Walk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -378,7 +383,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300024, guid: 6379d13f0cee18d41808ddb531da3fc2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -399,7 +404,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8408409532128847769}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: playerSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

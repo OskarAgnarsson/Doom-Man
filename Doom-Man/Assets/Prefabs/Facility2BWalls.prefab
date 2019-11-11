@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 6485912154621636152}
   - component: {fileID: 6485912154621636155}
   - component: {fileID: 1167373780}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Walls
-  m_TagString: Untagged
+  m_TagString: Walls
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -655,7 +655,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
 --- !u!1 &6485912155256891479
 GameObject:
@@ -667,7 +667,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6485912155256891477}
   - component: {fileID: 6485912155256891476}
-  m_Layer: 0
+  - component: {fileID: 728855483}
+  - component: {fileID: 728855482}
+  m_Layer: 8
   m_Name: Facility2BWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -698,6 +700,98 @@ Grid:
   m_GameObject: {fileID: 6485912155256891479}
   m_Enabled: 1
   m_CellSize: {x: 1, y: 1, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
+  m_CellGap: {x: -0.001, y: -0.001, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!50 &728855483
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6485912155256891479}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!66 &728855482
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6485912155256891479}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1167373780}
+    m_ColliderPaths:
+    - - X: 39970000
+        Y: 0
+      - X: 119890000
+        Y: 0
+      - X: 119890000
+        Y: 89920008
+      - X: 59940000
+        Y: 89920008
+      - X: 59940000
+        Y: 59950000
+      - X: -29970000
+        Y: 59950000
+      - X: -29970000
+        Y: -39960004
+      - X: 39970000
+        Y: -39960004
+    - - X: -19970000
+        Y: -29960000
+      - X: -19970000
+        Y: 49950000
+      - X: 69940000
+        Y: 49950000
+      - X: 69940000
+        Y: 79920000
+      - X: 109890000
+        Y: 79920000
+      - X: 109890000
+        Y: 10000000
+      - X: 29970000
+        Y: 10000000
+      - X: 29970000
+        Y: -29960000
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 3.997, y: 0}
+      - {x: 11.989, y: 0}
+      - {x: 11.989, y: 8.992001}
+      - {x: 5.994, y: 8.992001}
+      - {x: 5.994, y: 5.995}
+      - {x: -2.997, y: 5.995}
+      - {x: -2.997, y: -3.9960005}
+      - {x: 3.997, y: -3.9960005}
+    - - {x: -1.997, y: -2.996}
+      - {x: -1.997, y: 4.995}
+      - {x: 6.994, y: 4.995}
+      - {x: 6.994, y: 7.992}
+      - {x: 10.989, y: 7.992}
+      - {x: 10.989, y: 1}
+      - {x: 2.997, y: 1}
+      - {x: 2.997, y: -2.996}
+  m_VertexDistance: 0.0005
