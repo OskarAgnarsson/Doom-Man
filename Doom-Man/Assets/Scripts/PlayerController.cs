@@ -157,7 +157,7 @@ public class PlayerController : MonoBehaviour
     {
         for (float i = 0; i < bulletcount; i++)
         {
-            Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(0.05f, 0.2f), 1);
+            Quaternion RotationOffset = new Quaternion(0, 0, Random.Range(-0.03f, 0.03f), 1);//Lætur skot ekki vera 100% nákvæmt
             Instantiate(pistol_bullet, transform.position, Quaternion.AngleAxis(playermouseangle, Vector3.back) * RotationOffset);//Býr til Bullet
         }
         NextShot = Time.time + firerate;

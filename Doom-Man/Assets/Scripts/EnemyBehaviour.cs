@@ -11,6 +11,7 @@ public class EnemyBehaviour : MonoBehaviour
     float nexthit;
     float immunity = 2f;
     float nextAttack;
+    private Vector3 prevPos;
 
     Animator enemyanim;
     PlayerController player;
@@ -28,12 +29,14 @@ public class EnemyBehaviour : MonoBehaviour
     void Start()
     {
         health = 100;
+        prevPos = transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckHealth();
+        MoveAnim();
     }
 
     //This Is Used For When The Enemy Hits The Player
@@ -44,6 +47,41 @@ public class EnemyBehaviour : MonoBehaviour
             player.health -= 50;
             nextAttack = Time.time + AttackCooldown;
         }
+    }
+
+    private void MoveAnim()
+    {
+        if (transform.position != prevPos)
+        {
+            float xDiff = transform.position.x - prevPos.x;
+            float yDiff = transform.position.y - prevPos.y;
+            enemyanim.SetBool("Walking", true);
+
+            if (Mathf.Abs(yDiff) > Mathf.Abs(xDiff))
+            {
+                if (yDiff < 0)
+                {
+                    enemyanim.SetInteger("Direction", 4);
+                }
+                else
+                {
+                    enemyanim.SetInteger("Direction", 3);
+                }
+            }
+            else
+            {
+                if (xDiff < 0)
+                {
+                    enemyanim.SetInteger("Direction", 2);
+                }
+                else
+                {
+                    enemyanim.SetInteger("Direction", 1);
+                }
+            }
+
+        }
+        prevPos = transform.position;
     }
 
     //This Function Checks The Enemies Health Every Frame And Calls The Death Animation When The Enemy Is Dead
