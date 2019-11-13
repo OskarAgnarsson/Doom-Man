@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8792502831159244261}
   - component: {fileID: 6006675006680027982}
   - component: {fileID: 1348713626072993926}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Ammo Pcikup
-  m_TagString: Untagged
+  m_TagString: Ammo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
