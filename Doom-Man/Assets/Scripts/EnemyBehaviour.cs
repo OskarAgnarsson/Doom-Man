@@ -37,15 +37,25 @@ public class EnemyBehaviour : MonoBehaviour
     {
         CheckHealth();
         MoveAnim();
+        CheckDistance();
     }
 
-    //This Is Used For When The Enemy Hits The Player
     public void hit()
     {
-        if(Time.time >= nextAttack)
+        if(Time.time >= nextAttack && player.health > 0)
         {
             player.health -= 50;
             nextAttack = Time.time + AttackCooldown;
+        }
+    }
+
+    void CheckDistance() {
+        if (Vector3.Distance(transform.position,player.gameObject.transform.position) < 7f && !enemyAI.enabled && !enemyPath.enabled) {
+            enemyAI.enabled = true;
+            enemyPath.enabled = true;
+        } else if (Vector3.Distance(transform.position,player.gameObject.transform.position) > 7f) {
+            enemyAI.enabled = false;
+            enemyPath.enabled = false;
         }
     }
 
@@ -80,6 +90,37 @@ public class EnemyBehaviour : MonoBehaviour
                 }
             }
 
+        }
+         else if (Vector3.Distance(transform.position, player.gameObject.transform.position) <= 3f) {
+            Vector3 playerPos = player.gameObject.transform.position;
+            float xDiff = transform.position.x - playerPos.x;
+            float yDiff = transform.position.y - playerPos.y;
+
+            if (Mathf.Abs(yDiff) > Mathf.Abs(xDiff))
+            {
+                if (yDiff > 0)
+                {
+                    enemyanim.SetInteger("Direction", 4);
+                }
+                else
+                {
+                    enemyanim.SetInteger("Direction", 3);
+                }
+            }
+            else
+            {
+                if (xDiff > 0)
+                {
+                    enemyanim.SetInteger("Direction", 2);
+                }
+                else
+                {
+                    enemyanim.SetInteger("Direction", 1);
+                }
+            }
+        }
+        else {
+            enemyanim.SetBool("Walking",false);
         }
         prevPos = transform.position;
     }

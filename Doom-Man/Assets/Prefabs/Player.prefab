@@ -258,7 +258,7 @@ Rigidbody2D:
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!114 &8408409530609238726
@@ -294,7 +294,6 @@ MonoBehaviour:
   Gun: {fileID: 2089023807}
   gunAnim: {fileID: 2089023811}
   GunSprite: {fileID: 0}
-  Enemy: {fileID: 0}
   roll_time: 0
   roll_modifier: 0
 --- !u!95 &8408409530609238729

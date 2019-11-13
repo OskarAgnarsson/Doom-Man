@@ -48,7 +48,6 @@ public class PlayerController : MonoBehaviour
         public GameObject Gun;
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
-        public GameObject Enemy;
 
     //Normal Private Vars
         private float bulletcount;
@@ -73,7 +72,6 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
-        EnemyBe = Enemy.gameObject.GetComponent<EnemyBehaviour>();
         playerbody = gameObject.GetComponent<Rigidbody2D>();
         GunSprite = gameObject.GetComponent<SpriteRenderer>();
         inventoryIndex = 0;
@@ -101,7 +99,6 @@ public class PlayerController : MonoBehaviour
         aim();
         firerate = Weapons[WeaponType]["FireRate"];
         bulletcount = Weapons[WeaponType]["BulletCount"];
-        Debug.Log(prevweapon);
     }
 
     void FixedUpdate()
@@ -192,14 +189,16 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void OnTriggerStay2D(Collider2D other)
     {
+        Debug.Log("hallo");
         if(other.CompareTag("Enemy"))
         {
-            if(EnemyBe != null)
-            {
-                EnemyBe.hit();
-            }
+            EnemyBe = other.gameObject.GetComponent<EnemyBehaviour>();
+            Debug.Log(EnemyBe);
+            EnemyBe.hit();
         }
     }
+
 }
