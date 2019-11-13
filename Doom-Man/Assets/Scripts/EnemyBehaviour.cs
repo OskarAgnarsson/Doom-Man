@@ -40,6 +40,7 @@ public class EnemyBehaviour : MonoBehaviour
         CheckDistance();
     }
 
+    //Attackar player þegar fallið er kallað
     public void hit()
     {
         if(Time.time >= nextAttack && player.health > 0)
@@ -49,6 +50,7 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+    //Ef player er nálægt þá eltir enemy player, annars ekki
     void CheckDistance() {
         if (Vector3.Distance(transform.position,player.gameObject.transform.position) < 7f && !enemyAI.enabled && !enemyPath.enabled) {
             enemyAI.enabled = true;
@@ -61,6 +63,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void MoveAnim()
     {
+        //Ef enemy er að hreyfast þá animatar þetta player
         if (transform.position != prevPos)
         {
             float xDiff = transform.position.x - prevPos.x;
@@ -91,6 +94,7 @@ public class EnemyBehaviour : MonoBehaviour
             }
 
         }
+        //Ef player er nógu nálægt snýr enemy í áttina að player
          else if (Vector3.Distance(transform.position, player.gameObject.transform.position) <= 3f) {
             Vector3 playerPos = player.gameObject.transform.position;
             float xDiff = transform.position.x - playerPos.x;
@@ -119,6 +123,7 @@ public class EnemyBehaviour : MonoBehaviour
                 }
             }
         }
+        //Ef player er ekki nálægt og enemy hreyfist ekki er ekkert animation
         else {
             enemyanim.SetBool("Walking",false);
         }

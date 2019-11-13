@@ -10,6 +10,7 @@ public class DoorControls : MonoBehaviour
 
     void Update()
     {
+        //Ókláraður kóði sem á að opna hurð þegar player er nálægt
         if (Vector2.Distance(new Vector2(transform.position.x,transform.position.y),new Vector2(player.transform.position.x,player.transform.position.y)) < 5f) {
             playerClose = true;
         } else {

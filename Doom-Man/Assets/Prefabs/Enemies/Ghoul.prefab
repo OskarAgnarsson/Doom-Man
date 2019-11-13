@@ -219,7 +219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  AttackCooldown: 10
+  AttackCooldown: 1
 --- !u!95 &5650305494481708446
 Animator:
   serializedVersion: 3

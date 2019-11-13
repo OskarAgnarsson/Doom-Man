@@ -192,16 +192,16 @@ public class PlayerController : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        Debug.Log("hallo");
+        //Ef player er inni í trigger með enemy tag þá ræðst enemy á player
         if(other.CompareTag("Enemy"))
         {
             EnemyBe = other.gameObject.GetComponent<EnemyBehaviour>();
-            Debug.Log(EnemyBe);
             EnemyBe.hit();
         }
     }
     void OnTriggerEnter2D(Collider2D other)
     {
+        //Ókláraður kóði sem á að bæta við ammo þegar player snertir ammo pickup
         if (other.CompareTag("Ammo"))
         {
             other.gameObject.SetActive(false);
