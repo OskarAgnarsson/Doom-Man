@@ -12,6 +12,7 @@ TagManager:
   - Nodes
   - Enemy
   - bullet
+  - Ammo
   layers:
   - Default
   - TransparentFX
@@ -26,7 +27,7 @@ TagManager:
   - Player
   - Enemy
   - bullets
-  - 
+  - Ammo
   - 
   - 
   - 
