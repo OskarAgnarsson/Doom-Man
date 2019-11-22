@@ -13,6 +13,7 @@ TagManager:
   - Enemy
   - bullet
   - Ammo
+  - Health
   layers:
   - Default
   - TransparentFX
@@ -28,7 +29,7 @@ TagManager:
   - Enemy
   - bullets
   - Ammo
-  - 
+  - Health
   - 
   - 
   - 

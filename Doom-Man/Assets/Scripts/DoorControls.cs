@@ -16,6 +16,5 @@ public class DoorControls : MonoBehaviour
         } else {
             playerClose = false;
         }
-        Debug.Log(playerClose);
     }
 }

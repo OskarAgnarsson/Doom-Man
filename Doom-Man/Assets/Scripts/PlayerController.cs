@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
         public float shotcount;
         public float health;
         public string prevweapon;
-        public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
+        public List<string> inventory;
         public int inventoryIndex;
         public Dictionary<string, Dictionary<string, float>> Weapons = new Dictionary<string, Dictionary<string, float>>()
             {
@@ -25,7 +25,8 @@ public class PlayerController : MonoBehaviour
                         {"FireRate",0.7f},
                         {"BulletCount",1f},
                         {"Bullet dmg",25f},
-                        {"Bullets",20f}
+                        {"Bullets",20f},
+                        {"Bullet Pack",5f}
                     }
                 },
                 {
@@ -34,7 +35,18 @@ public class PlayerController : MonoBehaviour
                         {"FireRate",2.5f},
                         {"BulletCount",5f},
                         {"Bullet dmg",15f},
-                        {"Bullets",5f}
+                        {"Bullets",5f},
+                        {"Bullet Pack",3f}
+                    }
+                },
+                {
+                    "SMG",new Dictionary<string,float>()
+                    {
+                        {"FireRate",0.3f},
+                        {"BulletCount",1f},
+                        {"Bullet dmg",10f},
+                        {"Bullets",30f},
+                        {"Bullet Pack",10f}
                     }
                 }
             };
@@ -88,6 +100,7 @@ public class PlayerController : MonoBehaviour
     {
         health = 100f;
         cam = Camera.main;
+        inventory = new List<string>(){ "Pistol", "Shotgun","SMG"};
     }
 
     // Update is called once per frame
@@ -204,7 +217,9 @@ public class PlayerController : MonoBehaviour
         //Ókláraður kóði sem á að bæta við ammo þegar player snertir ammo pickup
         if (other.CompareTag("Ammo"))
         {
-            other.gameObject.SetActive(false);
+            Destroy(other.gameObject);
+            Weapons[WeaponType]["Bullets"] = Weapons[WeaponType]["Bullets"] + Weapons[WeaponType]["Bullet Pack"];
+
         }
     }
 }
