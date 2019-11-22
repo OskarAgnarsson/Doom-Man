@@ -12,7 +12,6 @@ public class PlayerController : MonoBehaviour
         public float NextShot;
         public float playermouseangle;
         public float firerate;
-        public float shotcount;
         public float health;
         public string prevweapon;
         public List<string> inventory = new List<string>(){ "Pistol", "Shotgun" };
