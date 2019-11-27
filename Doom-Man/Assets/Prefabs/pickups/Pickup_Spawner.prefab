@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3407467552917625867}
   - component: {fileID: 6617465040596372370}
   - component: {fileID: 2591239729828404735}
+  - component: {fileID: 1824893210}
   m_Layer: 0
   m_Name: Pickup_Spawner
   m_TagString: pcspawner
@@ -99,3 +100,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1824893210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5900618967471866213}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 53c067f67ee455e4c856338d7ce5c89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickupList:
+  - {fileID: 4534428876685998436, guid: 690c960c21ac87147a72a5ee9f032bc0, type: 3}
+  - {fileID: 5429177966889206673, guid: 7735b46371e5b03409a01e7dd26fb600, type: 3}
+  pickupAnim: {fileID: 0}
+  pickupCount: 0

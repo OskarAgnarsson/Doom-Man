@@ -407,7 +407,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -175}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1974221621
@@ -679,6 +679,9 @@ MonoBehaviour:
   playerCont: {fileID: 0}
   healthAmount: {fileID: 1969635079127720805}
   ammoAmount: {fileID: 1969635079307405867}
+  menu: {fileID: 1969635080020696940}
+  menuOpen: 0
+  cursorVisible: 0
 --- !u!95 &1310173038
 Animator:
   serializedVersion: 3

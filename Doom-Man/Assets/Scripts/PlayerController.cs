@@ -228,8 +228,8 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             Weapons[WeaponType]["Bullets"] = Weapons[WeaponType]["Bullets"] + Weapons[WeaponType]["Bullet Pack"];
             pickup.pickupAnim.SetBool("Item",false);
-            pickup.haspickedup = true;
-
+            pickup.pickupCount -= 1;
+            pickup.ExtendNextSpawn();
         }
 
         if (other.CompareTag("Health"))
@@ -237,7 +237,8 @@ public class PlayerController : MonoBehaviour
             Destroy(other.gameObject);
             health += 25;
             pickup.pickupAnim.SetBool("Item",false);
-            pickup.haspickedup = true;
+            pickup.pickupCount -= 1;
+            pickup.ExtendNextSpawn();
         }
     }
 }
