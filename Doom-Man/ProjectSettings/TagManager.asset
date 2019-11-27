@@ -14,6 +14,7 @@ TagManager:
   - bullet
   - Ammo
   - Health
+  - pcspawner
   layers:
   - Default
   - TransparentFX

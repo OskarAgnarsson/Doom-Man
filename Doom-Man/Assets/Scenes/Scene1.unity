@@ -788,6 +788,8 @@ MonoBehaviour:
   pickupList:
   - {fileID: 4534428876685998436, guid: 690c960c21ac87147a72a5ee9f032bc0, type: 3}
   - {fileID: 5429177966889206673, guid: 7735b46371e5b03409a01e7dd26fb600, type: 3}
+  pickupAnim: {fileID: 0}
+  haspickedup: 0
 --- !u!1 &2000663043 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8408409530609238722, guid: 627399acbf68175468c572a36a0a785e,
@@ -4262,6 +4264,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: inventory.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: mouseangletracker
+      value: 
+      objectReference: {fileID: 1001293693}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: inventory.Array.data[2]
+      value: SMG
+      objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238725, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4316,16 +4338,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: mouseangletracker
-      value: 
-      objectReference: {fileID: 1001293693}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: Enemy
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238727, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}

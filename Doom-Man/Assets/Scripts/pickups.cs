@@ -5,33 +5,54 @@ using UnityEngine;
 public class pickups : MonoBehaviour
 {
     public List<GameObject> pickupList;
+    public Animator pickupAnim;
+    public bool haspickedup;
 
     GameObject currentobject;
     GameObject prevobject;
     float spawnTime;
     float nextSpawn;
-    Animator pickupAnim;
+    int itemindex;
 
     void Start()
     {
-        currentobject = pickupList[Random.Range(0,1)];
-        spawnTime = 5f;
+        haspickedup = false;
+        itemindex = Random.Range(0,2);
+        currentobject = pickupList[itemindex];
+        spawnTime = 1f;
         pickupAnim = this.gameObject.GetComponent<Animator>();
+        Debug.Log(itemindex);
     }
 
     void Update()
     {
-        if(nextSpawn <= Time.time && GameObject.Find(currentobject.name) == null)
+        Debug.Log(haspickedup);
+        itemindex = Random.Range(0,2);
+        if(itemindex != 0)
+        {
+            itemindex = 1;
+        }
+
+        if(nextSpawn <= Time.time)
         {
             pickupAnim.SetBool("Item",true);
         }
     }
     
+    void ExtendNextSpawn()
+    {
+        nextSpawn = Time.time + spawnTime;
+    }
+
     void spawnitem()
     {
-        Instantiate(currentobject,transform.position+new Vector3(0f,2f,0f),new Quaternion(0f,0f,0f,0f),transform);
-        nextSpawn = Time.time + spawnTime;
+        if(nextSpawn <= Time.time && haspickedup)
+        {
+            pickupAnim.SetBool("Item",false);
+        }
+        Instantiate(currentobject,transform.position+new Vector3(0f,.5f,0f),new Quaternion(0f,0f,0f,0f),transform);
         prevobject = currentobject;
-        currentobject = pickupList[Random.Range(0,1)];
+        haspickedup = false;
+        currentobject = pickupList[itemindex];
     }
 }

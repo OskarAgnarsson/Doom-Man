@@ -78,13 +78,15 @@ public class PlayerController : MonoBehaviour
         //Movement
             private Vector2 mv;
             private Rigidbody2D playerbody;
+
         private EnemyBehaviour EnemyBe;
-        
+        private pickups pickup;
 
     void Awake()
     {
         playerbody = gameObject.GetComponent<Rigidbody2D>();
         GunSprite = gameObject.GetComponent<SpriteRenderer>();
+        pickup = GameObject.FindWithTag("pcspawner").GetComponent<pickups>();
         inventoryIndex = 0;
         NextShot = Time.time;
         is_rolling = false;
@@ -97,6 +99,8 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        WeaponType = inventory[inventoryIndex];
+        prevweapon = inventory[inventoryIndex+1];
         health = 100f;
         cam = Camera.main;
         inventory = new List<string>(){ "Pistol", "Shotgun","SMG"};
@@ -218,7 +222,17 @@ public class PlayerController : MonoBehaviour
         {
             Destroy(other.gameObject);
             Weapons[WeaponType]["Bullets"] = Weapons[WeaponType]["Bullets"] + Weapons[WeaponType]["Bullet Pack"];
+            pickup.pickupAnim.SetBool("Item",false);
+            pickup.haspickedup = true;
 
+        }
+
+        if (other.CompareTag("Health"))
+        {
+            Destroy(other.gameObject);
+            health += 25;
+            pickup.pickupAnim.SetBool("Item",false);
+            pickup.haspickedup = true;
         }
     }
 }
