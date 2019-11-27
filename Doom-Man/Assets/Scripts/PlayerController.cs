@@ -59,6 +59,7 @@ public class PlayerController : MonoBehaviour
         public GameObject Gun;
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
+        public HUDController hudCont;
 
     //Normal Private Vars
         private float bulletcount;
@@ -100,6 +101,8 @@ public class PlayerController : MonoBehaviour
         health = 100f;
         cam = Camera.main;
         inventory = new List<string>(){ "Pistol", "Shotgun","SMG"};
+        WeaponType = inventory[inventoryIndex];
+        prevweapon = inventory[inventoryIndex+1];
     }
 
     // Update is called once per frame
@@ -149,15 +152,17 @@ public class PlayerController : MonoBehaviour
     }
     //Miðar
     void aim()
-    {
-        PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;//Mismunur mouseposition og players
-        PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
-        mouseangle = Vector2.Angle(PlayerToMousetracker,PlayerToMouse);
-        playermouseangle = Mathf.Atan2(PlayerToMouse.x,PlayerToMouse.y) * Mathf.Rad2Deg;
-        
-        if(PlayerToMouse.y < 0)//Breytir mouseangle í mínus ef músin er undir player, leyfir okkur að nota mouseangle sem 360 gráður í staðinn fyrir 180
-        {
-            mouseangle = -mouseangle;
+    {   
+        if (!hudCont.menuOpen) {
+            PlayerToMouse = cam.ScreenToWorldPoint(new Vector3(Input.mousePosition.x,Input.mousePosition.y,cam.nearClipPlane))-transform.position;//Mismunur mouseposition og players
+            PlayerToMousetracker = new Vector2(mouseangletracker.transform.position.x,mouseangletracker.transform.position.y) - new Vector2(transform.position.x,transform.position.y);
+            mouseangle = Vector2.Angle(PlayerToMousetracker,PlayerToMouse);
+            playermouseangle = Mathf.Atan2(PlayerToMouse.x,PlayerToMouse.y) * Mathf.Rad2Deg;
+            
+            if(PlayerToMouse.y < 0)//Breytir mouseangle í mínus ef músin er undir player, leyfir okkur að nota mouseangle sem 360 gráður í staðinn fyrir 180
+            {
+                mouseangle = -mouseangle;
+            }
         }
     }
 
