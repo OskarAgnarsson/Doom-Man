@@ -9,8 +9,12 @@ public class HUDController : MonoBehaviour
     public PlayerController playerCont;
     public Text healthAmount;
     public Text ammoAmount;
+    public GameObject menu;
+    public bool menuOpen;
+    public bool cursorVisible;
 
     private Animator anim;
+
 
     void Awake() 
     {
@@ -28,6 +32,36 @@ public class HUDController : MonoBehaviour
             healthAmount.text = playerCont.health.ToString();
         }
         hotbar();
+        if (!menu.activeSelf) {
+            menuOpen = false;
+        }
+        else {
+            menuOpen = true;
+        }
+        if (menuOpen && Time.timeScale != 0) {
+            Time.timeScale = 0;
+        }
+        else if (!menuOpen && Time.timeScale == 0) {
+            Time.timeScale = 1;
+        }
+        if (!menuOpen && Input.GetKeyDown("escape")) {
+            openMenu();
+        }
+        else if (menuOpen && Input.GetKeyDown("escape")) {
+            closeMenu();
+        }
+        if (cursorVisible) {
+            Cursor.visible = true;
+        }
+        else {
+            Cursor.visible = false;
+        }
+        if(menuOpen && !cursorVisible) {
+            cursorVisible = true;
+        }
+        else if (!menuOpen && cursorVisible) {
+            cursorVisible = false;
+        }
     }
 
     void hotbar() {
@@ -40,5 +74,19 @@ public class HUDController : MonoBehaviour
         else if (playerCont.WeaponType == "SMG") {
             anim.SetInteger("Weapon",3);
         }
+    }
+
+    void openMenu() {
+        menu.SetActive(true);
+        menuOpen = true;
+        cursorVisible = true;
+        Time.timeScale = 0;
+    }
+
+    void closeMenu() {
+        menu.SetActive(false);
+        menuOpen = false;
+        cursorVisible = false;
+        Time.timeScale = 1;
     }
 }

@@ -9,7 +9,7 @@ public class EnemyBehaviour : MonoBehaviour
     public float AttackCooldown;
 
     float nexthit;
-    float immunity = 2f;
+    float immunity = 0.2f;
     float nextAttack;
     private Vector3 prevPos;
 
@@ -158,11 +158,11 @@ public class EnemyBehaviour : MonoBehaviour
         Debug.Log(other.gameObject.tag);
         if(other.gameObject.CompareTag("bullet"))
         {
-            Destroy(other.gameObject);
             if(nexthit <= Time.time)
             {
                 health = health - player.Weapons[player.WeaponType]["Bullet dmg"];
                 nexthit = Time.time + immunity;
+                Destroy(other.gameObject);
             }
         }
     }
