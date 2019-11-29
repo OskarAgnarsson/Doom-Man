@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -90,6 +91,7 @@ public class PlayerController : MonoBehaviour
         private EnemyBehaviour EnemyBe;
         private pickups pickup;
         private UnlockPistol pistolUnlock;
+        private DoorControls doorCon;
 
     void Awake()
     {
@@ -221,6 +223,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void LoadByIndex(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+    }
+
 
     void OnTriggerStay2D(Collider2D other)
     {
@@ -291,6 +298,13 @@ public class PlayerController : MonoBehaviour
                 pickup.ExtendNextSpawn();
             }
             
+        }
+
+        if (other.CompareTag("Door")) {
+            doorCon = other.gameObject.GetComponent<DoorControls>();
+            if (!doorCon.doorLocked) {
+                LoadByIndex(doorCon.nextLevelIndex);
+            }
         }
     }
 }

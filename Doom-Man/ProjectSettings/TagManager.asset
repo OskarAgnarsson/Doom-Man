@@ -15,6 +15,7 @@ TagManager:
   - Ammo
   - Health
   - pcspawner
+  - Door
   - Pistol
   - PistolPickup
   - Gun
