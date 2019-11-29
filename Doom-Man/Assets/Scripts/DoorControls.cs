@@ -6,6 +6,14 @@ public class DoorControls : MonoBehaviour
 {
     public GameObject player;
     public bool playerClose = false;
+    public int nextLevelIndex;
+    public bool doorLocked = true;
+
+    private Animator doorAnim;
+
+    void Awake() {
+        doorAnim = gameObject.GetComponent<Animator>();
+    }
 
 
     void Update()
@@ -16,5 +24,18 @@ public class DoorControls : MonoBehaviour
         } else {
             playerClose = false;
         }
+
+        if (GameObject.FindWithTag("Enemy") == null) {
+            doorAnim.SetBool("Locked",false);
+            doorLocked = false;
+        }
+
+        if (playerClose) {
+            doorAnim.SetBool("Open",true);
+        }
+        else {
+            doorAnim.SetBool("Open",false);
+        }
+
     }
 }
