@@ -8,6 +8,7 @@ public class GunControlls : MonoBehaviour
 
     public PlayerController player;
     public Transform right;
+    public UnlockPistol pistolUnlock;
     public Transform left;
     private Animator gunAnim;
     private Camera cam;
@@ -15,6 +16,7 @@ public class GunControlls : MonoBehaviour
 
     private void Start()
     {
+        pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
         gunrenderer = transform.gameObject.GetComponent<SpriteRenderer>();
         cam = Camera.main;
         gunAnim = transform.gameObject.GetComponent<Animator>();
@@ -22,7 +24,7 @@ public class GunControlls : MonoBehaviour
     private void Update()
     {
         shotcount = player.Weapons[player.WeaponType]["Bullets"];
-        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0 && shotcount > 0)//Skýtur og bætir við delay
+        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0 && shotcount > 0 && pistolUnlock.hasGun)//Skýtur og bætir við delay
         {
             gunAnim.SetTrigger("Shoot");
         }

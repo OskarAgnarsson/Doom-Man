@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
         public float playermouseangle;
         public float firerate;
         public float health;
+        public float MaxHealth;
         public string prevweapon;
         public List<string> inventory;
         public int inventoryIndex;
@@ -25,7 +26,8 @@ public class PlayerController : MonoBehaviour
                         {"BulletCount",1f},
                         {"Bullet dmg",25f},
                         {"Bullets",20f},
-                        {"Bullet Pack",5f}
+                        {"Bullet Pack",5f},
+                        {"Max Ammo",20f}
                     }
                 },
                 {
@@ -35,7 +37,8 @@ public class PlayerController : MonoBehaviour
                         {"BulletCount",5f},
                         {"Bullet dmg",15f},
                         {"Bullets",5f},
-                        {"Bullet Pack",3f}
+                        {"Bullet Pack",3f},
+                        {"Max Ammo",30f}
                     }
                 },
                 {
@@ -45,7 +48,8 @@ public class PlayerController : MonoBehaviour
                         {"BulletCount",1f},
                         {"Bullet dmg",10f},
                         {"Bullets",30f},
-                        {"Bullet Pack",10f}
+                        {"Bullet Pack",10f},
+                        {"Max Ammo",30f}
                     }
                 }
             };
@@ -59,10 +63,13 @@ public class PlayerController : MonoBehaviour
         public GameObject Gun;
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
+        public Animator pistolPickup;
         public HUDController hudCont;
 
     //Normal Private Vars
         private float bulletcount;
+        private float ammo_after_pickup;
+        private float health_after_pickup;
         //Movement Vars
             private float mvx;
             private float mvy;
@@ -82,12 +89,15 @@ public class PlayerController : MonoBehaviour
 
         private EnemyBehaviour EnemyBe;
         private pickups pickup;
+        private UnlockPistol pistolUnlock;
 
     void Awake()
     {
         playerbody = gameObject.GetComponent<Rigidbody2D>();
         GunSprite = gameObject.GetComponent<SpriteRenderer>();
         pickup = GameObject.FindWithTag("pcspawner").GetComponent<pickups>();
+        pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
+        pistolPickup = GameObject.FindWithTag("PistolPickup").GetComponent<Animator>();
         inventoryIndex = 0;
         NextShot = Time.time;
         is_rolling = false;
@@ -103,8 +113,9 @@ public class PlayerController : MonoBehaviour
         WeaponType = inventory[inventoryIndex];
         prevweapon = inventory[inventoryIndex+1];
         health = 100f;
+        MaxHealth = 100f;
         cam = Camera.main;
-        inventory = new List<string>(){ "Pistol", "Shotgun","SMG"};
+        inventory = new List<string>(){ "Pistol", "Shotgun", "SMG"};
         WeaponType = inventory[inventoryIndex];
         prevweapon = inventory[inventoryIndex+1];
     }
@@ -225,20 +236,61 @@ public class PlayerController : MonoBehaviour
         //Ókláraður kóði sem á að bæta við ammo þegar player snertir ammo pickup
         if (other.CompareTag("Ammo"))
         {
+            ammo_after_pickup = Weapons[WeaponType]["Bullets"]+Weapons[WeaponType]["Bullet Pack"];
+            if(Weapons[WeaponType]["Bullets"] == Weapons[WeaponType]["Max Ammo"])
+            {
+                pickup.pickupAnim.SetBool("Item",true);
+            }
+            else if(ammo_after_pickup >= Weapons[WeaponType]["Max Ammo"])
+            {
+                Destroy(other.gameObject);
+                Weapons[WeaponType]["Bullets"] = Weapons[WeaponType]["Max Ammo"];
+                pickup.pickupAnim.SetBool("Item",false);
+                pickup.pickupCount -= 1;
+                pickup.ExtendNextSpawn();
+            }
+            else
+            {
+                Destroy(other.gameObject);
+                Weapons[WeaponType]["Bullets"] = ammo_after_pickup;
+                pickup.pickupAnim.SetBool("Item",false);
+                pickup.pickupCount -= 1;
+                pickup.ExtendNextSpawn();
+            }
+        }
+
+        if(other.CompareTag("Pistol"))
+        {
+            pistolPickup.SetBool("pickup",true);
             Destroy(other.gameObject);
-            Weapons[WeaponType]["Bullets"] = Weapons[WeaponType]["Bullets"] + Weapons[WeaponType]["Bullet Pack"];
-            pickup.pickupAnim.SetBool("Item",false);
-            pickup.pickupCount -= 1;
-            pickup.ExtendNextSpawn();
+            pistolUnlock.hasGun = true;
         }
 
         if (other.CompareTag("Health"))
         {
-            Destroy(other.gameObject);
-            health += 25;
-            pickup.pickupAnim.SetBool("Item",false);
-            pickup.pickupCount -= 1;
-            pickup.ExtendNextSpawn();
+            health_after_pickup = health+25;
+
+            if(health >= MaxHealth)
+            {
+                health = health;
+            }
+            else if(health_after_pickup >= MaxHealth)
+            {
+                health = MaxHealth;
+                Destroy(other.gameObject);
+                pickup.pickupAnim.SetBool("Item",false);
+                pickup.pickupCount -= 1;
+                pickup.ExtendNextSpawn();
+            }
+            else
+            {
+                health = health_after_pickup;
+                Destroy(other.gameObject);
+                pickup.pickupAnim.SetBool("Item",false);
+                pickup.pickupCount -= 1;
+                pickup.ExtendNextSpawn();
+            }
+            
         }
     }
 }

@@ -15,6 +15,11 @@ TagManager:
   - Ammo
   - Health
   - pcspawner
+  - Pistol
+  - PistolPickup
+  - Gun
+  - ShotgunPickup
+  - Shotgun
   layers:
   - Default
   - TransparentFX
