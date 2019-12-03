@@ -6,6 +6,7 @@ public class UnlockPistol : MonoBehaviour
 {
     public GameObject gun;
     public bool hasGun;
+    private PlayerController playerCon;
 
     void Awake()
     {
@@ -17,7 +18,7 @@ public class UnlockPistol : MonoBehaviour
     }
     void Update()
     {
-        if(hasGun == true)
+        if(hasGun)
         {
             gun.SetActive(true);
         }

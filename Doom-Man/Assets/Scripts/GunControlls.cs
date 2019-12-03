@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GunControlls : MonoBehaviour
 {
@@ -13,18 +14,29 @@ public class GunControlls : MonoBehaviour
     private Animator gunAnim;
     private Camera cam;
     private SpriteRenderer gunrenderer;
+    private bool hasGun = false;
+    private int scene;
 
     private void Start()
     {
-        pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
+        scene = SceneManager.GetActiveScene().buildIndex;
+        if (scene == 1) {
+            pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
+        }
+        else {
+            hasGun = true;
+        }
         gunrenderer = transform.gameObject.GetComponent<SpriteRenderer>();
         cam = Camera.main;
         gunAnim = transform.gameObject.GetComponent<Animator>();
     }
     private void Update()
     {
+        if (pistolUnlock) {
+            hasGun = pistolUnlock.hasGun;
+        }
         shotcount = player.Weapons[player.WeaponType]["Bullets"];
-        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0 && shotcount > 0 && pistolUnlock.hasGun)//Skýtur og bætir við delay
+        if (Input.GetAxis("Fire1") == 1 && Time.time > player.NextShot && player.firerate > 0 && shotcount > 0 && hasGun)//Skýtur og bætir við delay
         {
             gunAnim.SetTrigger("Shoot");
         }

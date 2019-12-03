@@ -74,6 +74,9 @@ public class HUDController : MonoBehaviour
         else if (playerCont.WeaponType == "SMG") {
             anim.SetInteger("Weapon",3);
         }
+        else {
+            anim.SetInteger("Weapon",1);
+        }
     }
 
     void openMenu() {

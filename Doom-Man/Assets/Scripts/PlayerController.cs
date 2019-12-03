@@ -65,12 +65,15 @@ public class PlayerController : MonoBehaviour
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
         public Animator pistolPickup;
+        public Animator shotgunPickup;
+        public Animator smgPickup;
         public HUDController hudCont;
 
     //Normal Private Vars
         private float bulletcount;
         private float ammo_after_pickup;
         private float health_after_pickup;
+        private int scene;
         //Movement Vars
             private float mvx;
             private float mvy;
@@ -95,11 +98,13 @@ public class PlayerController : MonoBehaviour
 
     void Awake()
     {
+        scene = SceneManager.GetActiveScene().buildIndex;
         playerbody = gameObject.GetComponent<Rigidbody2D>();
         GunSprite = gameObject.GetComponent<SpriteRenderer>();
-        pickup = GameObject.FindWithTag("pcspawner").GetComponent<pickups>();
-        pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
-        pistolPickup = GameObject.FindWithTag("PistolPickup").GetComponent<Animator>();
+        if (scene == 1) {
+            pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
+            pistolPickup = GameObject.FindWithTag("PistolPickup").GetComponent<Animator>();
+        }
         inventoryIndex = 0;
         NextShot = Time.time;
         is_rolling = false;
@@ -243,6 +248,7 @@ public class PlayerController : MonoBehaviour
         //Ókláraður kóði sem á að bæta við ammo þegar player snertir ammo pickup
         if (other.CompareTag("Ammo"))
         {
+            pickup = other.gameObject.GetComponentInParent<pickups>();
             ammo_after_pickup = Weapons[WeaponType]["Bullets"]+Weapons[WeaponType]["Bullet Pack"];
             if(Weapons[WeaponType]["Bullets"] == Weapons[WeaponType]["Max Ammo"])
             {
@@ -275,13 +281,10 @@ public class PlayerController : MonoBehaviour
 
         if (other.CompareTag("Health"))
         {
+            pickup = other.gameObject.GetComponentInParent<pickups>();
             health_after_pickup = health+25;
 
-            if(health >= MaxHealth)
-            {
-                health = health;
-            }
-            else if(health_after_pickup >= MaxHealth)
+            if(health_after_pickup >= MaxHealth)
             {
                 health = MaxHealth;
                 Destroy(other.gameObject);
@@ -289,7 +292,7 @@ public class PlayerController : MonoBehaviour
                 pickup.pickupCount -= 1;
                 pickup.ExtendNextSpawn();
             }
-            else
+            else if (health_after_pickup <= MaxHealth)
             {
                 health = health_after_pickup;
                 Destroy(other.gameObject);
