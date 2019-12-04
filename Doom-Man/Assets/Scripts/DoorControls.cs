@@ -10,9 +10,13 @@ public class DoorControls : MonoBehaviour
     public bool doorLocked = true;
 
     private Animator doorAnim;
+    private RedButton redButton;
 
     void Awake() {
         doorAnim = gameObject.GetComponent<Animator>();
+        if (GameObject.FindWithTag("Button")) {
+            redButton = GameObject.FindWithTag("Button").GetComponent<RedButton>();
+        }
     }
 
 
@@ -25,9 +29,17 @@ public class DoorControls : MonoBehaviour
             playerClose = false;
         }
 
-        if (GameObject.FindWithTag("Enemy") == null) {
-            doorAnim.SetBool("Locked",false);
-            doorLocked = false;
+        if (GameObject.FindWithTag("Button")){
+            if (GameObject.FindWithTag("Enemy") == null && redButton.button) {
+                doorAnim.SetBool("Locked",false);
+                doorLocked = false;
+            }
+        }
+        else {
+            if (GameObject.FindWithTag("Enemy") == null) {
+                doorAnim.SetBool("Locked",false);
+                doorLocked = false;
+            }
         }
 
         if (playerClose) {

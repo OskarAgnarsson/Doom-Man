@@ -21,6 +21,8 @@ TagManager:
   - Gun
   - ShotgunPickup
   - Shotgun
+  - Button
+  - Vortex
   layers:
   - Default
   - TransparentFX

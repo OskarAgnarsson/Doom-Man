@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Outside1.unity
     guid: 9c4def306548a784b9d5fd7615e39271
+  - enabled: 1
+    path: Assets/Scenes/Facility2E.unity
+    guid: b50fbb7df171d19408af62be55196b1e
+  - enabled: 1
+    path: Assets/Scenes/Facility1E.unity
+    guid: 4d67c78ed29259e41ac6a3692fec33c6
+  - enabled: 1
+    path: Assets/Scenes/Outside2.unity
+    guid: 3cf7c1edaa94ca94d8a8e89664441c55
+  - enabled: 1
+    path: Assets/Scenes/Facility1A.unity
+    guid: 5f87f2999e00e954a8ec91c5a48e54b4
   m_configObjects: {}

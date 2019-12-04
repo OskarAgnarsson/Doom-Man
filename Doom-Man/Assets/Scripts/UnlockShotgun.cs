@@ -11,7 +11,7 @@ public class UnlockShotgun : MonoBehaviour
         hasGun = false;
         playerCon = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
     }
-    // Update is called once per frame
+    //ÞETTA SCRIPT VIRKAR EKKI OG ER EKKI NOTAÐ
     void Update()
     {
         if (hasGun) {

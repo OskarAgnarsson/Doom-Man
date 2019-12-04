@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 2089023810}
   m_Layer: 10
   m_Name: Gun
-  m_TagString: Untagged
+  m_TagString: Gun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,6 +175,7 @@ MonoBehaviour:
   shotcount: 0
   player: {fileID: 8408409530609238726}
   right: {fileID: 1020287389}
+  pistolUnlock: {fileID: 0}
   left: {fileID: 599189151}
 --- !u!1 &8408409530609238722
 GameObject:
@@ -189,6 +190,7 @@ GameObject:
   - component: {fileID: 8408409530609238724}
   - component: {fileID: 8408409530609238726}
   - component: {fileID: 8408409530609238729}
+  - component: {fileID: 2000663046}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -280,12 +282,13 @@ MonoBehaviour:
   NextShot: 0
   playermouseangle: 0
   firerate: 0
-  shotcount: 0
   health: 0
+  MaxHealth: 0
   prevweapon: 
   inventory:
   - Pistol
   - Shotgun
+  - SMG
   inventoryIndex: 0
   cam: {fileID: 0}
   pistol_bullet: {fileID: 3536679771708400080, guid: 74211188490b0564b8ade2bd1feb7526,
@@ -294,6 +297,9 @@ MonoBehaviour:
   Gun: {fileID: 2089023807}
   gunAnim: {fileID: 2089023811}
   GunSprite: {fileID: 0}
+  pistolPickup: {fileID: 0}
+  smgPickup: {fileID: 0}
+  hudCont: {fileID: 0}
   roll_time: 0
   roll_modifier: 0
 --- !u!95 &8408409530609238729
@@ -315,6 +321,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2000663046
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8408409530609238722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bdfbe39ad694bf42914118839009a6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finished: 0
+  dead: 0
+  image: {fileID: 0}
 --- !u!1 &8408409531397792602
 GameObject:
   m_ObjectHideFlags: 0

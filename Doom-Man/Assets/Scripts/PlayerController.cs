@@ -65,7 +65,6 @@ public class PlayerController : MonoBehaviour
         public Animator gunAnim;
         public SpriteRenderer GunSprite;
         public Animator pistolPickup;
-        public Animator shotgunPickup;
         public Animator smgPickup;
         public HUDController hudCont;
 
@@ -95,12 +94,14 @@ public class PlayerController : MonoBehaviour
         private pickups pickup;
         private UnlockPistol pistolUnlock;
         private DoorControls doorCon;
+        private EndGame stopGame;
 
     void Awake()
     {
         scene = SceneManager.GetActiveScene().buildIndex;
         playerbody = gameObject.GetComponent<Rigidbody2D>();
         GunSprite = gameObject.GetComponent<SpriteRenderer>();
+        stopGame = gameObject.GetComponent<EndGame>();
         if (scene == 1) {
             pistolUnlock = GameObject.FindWithTag("PistolPickup").GetComponent<UnlockPistol>();
             pistolPickup = GameObject.FindWithTag("PistolPickup").GetComponent<Animator>();
@@ -136,6 +137,9 @@ public class PlayerController : MonoBehaviour
         aim();
         firerate = Weapons[WeaponType]["FireRate"];
         bulletcount = Weapons[WeaponType]["BulletCount"];
+        if (health <= 0) {
+            death();
+        }
     }
 
     void FixedUpdate()
@@ -309,5 +313,13 @@ public class PlayerController : MonoBehaviour
                 LoadByIndex(doorCon.nextLevelIndex);
             }
         }
+
+        if (other.CompareTag("Vortex")) {
+            health = 1000000;
+            stopGame.finished = true;
+        }
+    }
+    void death() {
+        stopGame.dead = true;
     }
 }

@@ -280,6 +280,11 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 2000663043}
+    - target: {fileID: 2038536219927544146, guid: 3cccca6865f25904e8cc40f260f6dc79,
+        type: 3}
+      propertyPath: nextLevelIndex
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cccca6865f25904e8cc40f260f6dc79, type: 3}
 --- !u!1 &1001293693 stripped
@@ -597,6 +602,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: HUD
       objectReference: {fileID: 0}
+    - target: {fileID: 1310173037, guid: 4b60c2119c88b034dae6c5d495d443ff, type: 3}
+      propertyPath: playerCont
+      value: 
+      objectReference: {fileID: 2000663044}
     - target: {fileID: 1969635079099133089, guid: 4b60c2119c88b034dae6c5d495d443ff,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -702,12 +711,20 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1310173037, guid: 4b60c2119c88b034dae6c5d495d443ff, type: 3}
-      propertyPath: playerCont
-      value: 
-      objectReference: {fileID: 2000663044}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b60c2119c88b034dae6c5d495d443ff, type: 3}
+--- !u!114 &1969635080071384014 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 578772781, guid: 4b60c2119c88b034dae6c5d495d443ff,
+    type: 3}
+  m_PrefabInstance: {fileID: 1969635080071384013}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2723351420524978891
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4199,6 +4216,48 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2089023807, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_TagString
+      value: Gun
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023807, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: inventory.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: mouseangletracker
+      value: 
+      objectReference: {fileID: 1001293693}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: Enemy
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: hudCont
+      value: 
+      objectReference: {fileID: 1695406990}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: inventory.Array.data[2]
+      value: SMG
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 393340238}
     - target: {fileID: 8408409530609238725, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4269,47 +4328,9 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.055
       objectReference: {fileID: 0}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: inventory.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: mouseangletracker
+    - target: {fileID: 2000663046, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: image
       value: 
-      objectReference: {fileID: 1001293693}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: Enemy
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: hudCont
-      value: 
-      objectReference: {fileID: 1695406990}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: inventory.Array.data[2]
-      value: SMG
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 393340238}
-    - target: {fileID: 2089023807, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_TagString
-      value: Gun
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089023807, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1969635080071384014}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 627399acbf68175468c572a36a0a785e, type: 3}
