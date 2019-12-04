@@ -12,9 +12,13 @@ public class EndGame : MonoBehaviour
 
     private float targetAlpha = 1f;
     private bool colorSet = false;
+    private bool imageOn = false;
 
     void Update() {
         if (finished && !dead) {
+            if (!imageOn) {
+                image.gameObject.SetActive(true);
+            }
             Color curColor = image.color;
             float alphaDiff = Mathf.Abs(curColor.a-targetAlpha);
 
@@ -28,6 +32,9 @@ public class EndGame : MonoBehaviour
             }
         }
         else if (dead) {
+            if (!imageOn) {
+                image.gameObject.SetActive(true);
+            }
             if (!colorSet) {
                 image.color = new Color (0,0,0,0);
                 colorSet = true;

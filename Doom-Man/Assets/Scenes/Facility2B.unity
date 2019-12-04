@@ -329,7 +329,7 @@ MonoBehaviour:
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
     cacheStartup: 0
-  showNavGraphs: 1
+  showNavGraphs: 0
   showUnwalkableNodes: 1
   debugMode: 0
   debugFloor: 0
@@ -4224,10 +4224,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}
       propertyPath: inventory.Array.size
@@ -4312,6 +4308,10 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238727, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}

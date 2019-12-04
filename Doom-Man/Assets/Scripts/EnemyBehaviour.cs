@@ -44,7 +44,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         if(Time.time >= nextAttack && player.health > 0)
         {
-            player.health -= 50;
+            player.health -= 10;
             nextAttack = Time.time + AttackCooldown;
         }
     }

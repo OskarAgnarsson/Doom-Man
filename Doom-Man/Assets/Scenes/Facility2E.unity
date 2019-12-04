@@ -301,21 +301,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghoul (3)
       objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.4056604
-      objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708434, guid: 81e0a412388913446a8105a481817408,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -376,6 +361,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2000663045}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
 --- !u!1 &1001293693 stripped
@@ -401,21 +401,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghoul (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.4056604
       objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708434, guid: 81e0a412388913446a8105a481817408,
         type: 3}
@@ -477,6 +462,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2000663045}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
 --- !u!212 &1215451730 stripped
@@ -684,21 +684,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ghoul (1)
       objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.4056604
-      objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708434, guid: 81e0a412388913446a8105a481817408,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -759,6 +744,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2000663045}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
 --- !u!212 &1497079520 stripped
@@ -903,6 +903,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2038536219927544146, guid: 3cccca6865f25904e8cc40f260f6dc79,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2000663043}
+    - target: {fileID: 2038536219927544146, guid: 3cccca6865f25904e8cc40f260f6dc79,
+        type: 3}
+      propertyPath: nextLevelIndex
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2038536219927544140, guid: 3cccca6865f25904e8cc40f260f6dc79,
         type: 3}
       propertyPath: m_Color.r
@@ -917,16 +927,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.33962262
-      objectReference: {fileID: 0}
-    - target: {fileID: 2038536219927544146, guid: 3cccca6865f25904e8cc40f260f6dc79,
-        type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 2000663043}
-    - target: {fileID: 2038536219927544146, guid: 3cccca6865f25904e8cc40f260f6dc79,
-        type: 3}
-      propertyPath: nextLevelIndex
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cccca6865f25904e8cc40f260f6dc79, type: 3}
@@ -999,9 +999,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingLayerID: -589858243
+  m_SortingLayer: 3
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300016, guid: 3720042ec019b1c4fa8588a35f4b7fef, type: 3}
   m_Color: {r: 0.3584906, g: 0.3584906, b: 0.3584906, a: 1}
   m_FlipX: 0
@@ -1038,21 +1038,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ghoul (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.4056604
-      objectReference: {fileID: 0}
-    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.4056604
       objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708434, guid: 81e0a412388913446a8105a481817408,
         type: 3}
@@ -1114,20 +1099,6 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2000663045}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
---- !u!1001 &1845718017
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5650305494481708439, guid: 81e0a412388913446a8105a481817408,
-        type: 3}
-      propertyPath: m_Name
-      value: Ghoul
-      objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
         type: 3}
       propertyPath: m_Color.r
@@ -1142,6 +1113,20 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.b
       value: 0.4056604
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
+--- !u!1001 &1845718017
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5650305494481708439, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Name
+      value: Ghoul
       objectReference: {fileID: 0}
     - target: {fileID: 5650305494481708434, guid: 81e0a412388913446a8105a481817408,
         type: 3}
@@ -1203,6 +1188,21 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 2000663045}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.4056604
+      objectReference: {fileID: 0}
+    - target: {fileID: 5650305494481708435, guid: 81e0a412388913446a8105a481817408,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4056604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81e0a412388913446a8105a481817408, type: 3}
 --- !u!1839735485 &1941652913 stripped
@@ -1289,9 +1289,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingLayerID: -1216803801
+  m_SortingLayer: 4
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 801e3080ec6ef3242bea7dcd02f8a50f, type: 3}
   m_Color: {r: 0.4056604, g: 0.4056604, b: 0.4056604, a: 1}
   m_FlipX: 0
@@ -1937,37 +1937,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Color.r
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Color.g
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
-      propertyPath: m_Color.b
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.38679248
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.38679248
-      objectReference: {fileID: 0}
-    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.38679248
-      objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238726, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}
       propertyPath: inventory.Array.size
@@ -2053,6 +2022,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Color.r
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2089023809, guid: 627399acbf68175468c572a36a0a785e, type: 3}
+      propertyPath: m_Color.b
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8408409530609238727, guid: 627399acbf68175468c572a36a0a785e,
         type: 3}
       propertyPath: m_Enabled
@@ -2072,6 +2057,21 @@ PrefabInstance:
       propertyPath: image
       value: 
       objectReference: {fileID: 1969635080071384014}
+    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.38679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.38679248
+      objectReference: {fileID: 0}
+    - target: {fileID: 8408409531397792604, guid: 627399acbf68175468c572a36a0a785e,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.38679248
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 627399acbf68175468c572a36a0a785e, type: 3}
 --- !u!1001 &8523657260999444144

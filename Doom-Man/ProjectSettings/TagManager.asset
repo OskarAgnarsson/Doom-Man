@@ -60,3 +60,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Floor
+    uniqueID: 2609704861
+    locked: 0
+  - name: Pickups
+    uniqueID: 179673701
+    locked: 0
+  - name: Props
+    uniqueID: 3078163495
+    locked: 0
+  - name: Doors
+    uniqueID: 3705109053
+    locked: 0
+  - name: Enemies
+    uniqueID: 1602852875
+    locked: 0
+  - name: Player
+    uniqueID: 1138535773
+    locked: 0
+  - name: Gun
+    uniqueID: 1296136839
+    locked: 0
+  - name: Walls
+    uniqueID: 2774900173
+    locked: 0

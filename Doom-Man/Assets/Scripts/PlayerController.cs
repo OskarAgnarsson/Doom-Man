@@ -288,7 +288,7 @@ public class PlayerController : MonoBehaviour
             pickup = other.gameObject.GetComponentInParent<pickups>();
             health_after_pickup = health+25;
 
-            if(health_after_pickup >= MaxHealth)
+            if(health_after_pickup == MaxHealth)
             {
                 health = MaxHealth;
                 Destroy(other.gameObject);
@@ -296,7 +296,7 @@ public class PlayerController : MonoBehaviour
                 pickup.pickupCount -= 1;
                 pickup.ExtendNextSpawn();
             }
-            else if (health_after_pickup <= MaxHealth)
+            else if (health_after_pickup < MaxHealth)
             {
                 health = health_after_pickup;
                 Destroy(other.gameObject);
