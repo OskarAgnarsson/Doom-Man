@@ -12,6 +12,7 @@ public class RedButton : MonoBehaviour
 
     public bool button = false;
 
+    //Þegar player snertir takkann kviknar á ljósunum
     void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.CompareTag("Player")){
             if (!button) {

@@ -29,11 +29,13 @@ public class pickups : MonoBehaviour
     
     public void ExtendNextSpawn()
     {
+        //Lengir tíma í næsta spawn
         nextSpawn = Time.time + spawnTime;
     }
 
     void spawnitem()
     {
+        //Spawnar pickup eftir einhvern tíma
         if(nextSpawn <= Time.time && pickupCount == 0)
         {
             pickupAnim.SetBool("Item",true);

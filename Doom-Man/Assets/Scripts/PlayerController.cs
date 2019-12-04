@@ -249,7 +249,7 @@ public class PlayerController : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)
     {
-        //Ókláraður kóði sem á að bæta við ammo þegar player snertir ammo pickup
+        //Bætir við ammo þegar player snertir ammo pickup
         if (other.CompareTag("Ammo"))
         {
             pickup = other.gameObject.GetComponentInParent<pickups>();
@@ -276,6 +276,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //Pistol pickup í Facility2B
         if(other.CompareTag("Pistol"))
         {
             pistolPickup.SetBool("pickup",true);
@@ -283,6 +284,7 @@ public class PlayerController : MonoBehaviour
             pistolUnlock.hasGun = true;
         }
 
+        //Health pickup
         if (other.CompareTag("Health"))
         {
             pickup = other.gameObject.GetComponentInParent<pickups>();
@@ -307,6 +309,7 @@ public class PlayerController : MonoBehaviour
             
         }
 
+        //Fer í næsta scene þegar player fer í hurð
         if (other.CompareTag("Door")) {
             doorCon = other.gameObject.GetComponent<DoorControls>();
             if (!doorCon.doorLocked) {
@@ -314,6 +317,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        //Endar leikinn þegar player fer í vortex
         if (other.CompareTag("Vortex")) {
             health = 1000000;
             stopGame.finished = true;

@@ -12,8 +12,6 @@ public class Animation_Controlls : MonoBehaviour
     private Animator gunanim;
     private PlayerController playerct;
 
-    
-
     void Start()
     {
         playerscript = player.gameObject.GetComponent<PlayerController>();

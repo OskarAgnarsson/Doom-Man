@@ -15,6 +15,7 @@ public class EndGame : MonoBehaviour
     private bool imageOn = false;
 
     void Update() {
+        //Fade to white þegar leikurinn er búinn
         if (finished && !dead) {
             if (!imageOn) {
                 image.gameObject.SetActive(true);
@@ -31,6 +32,7 @@ public class EndGame : MonoBehaviour
                 SceneManager.LoadScene(0);
             }
         }
+        //Fade to black þegar player deyr
         else if (dead) {
             if (!imageOn) {
                 image.gameObject.SetActive(true);

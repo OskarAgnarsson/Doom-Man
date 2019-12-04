@@ -12,7 +12,7 @@ public class BulletBehaviour : MonoBehaviour
     private float BulletLifeSpan;
     private float BulletDeath;
 
-    // Start is called before the first frame update
+
     void Start()
     {
         BulletSpeed = 2f;//Hraði kúlunnar
@@ -21,7 +21,6 @@ public class BulletBehaviour : MonoBehaviour
         BulletBody = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         BulletBody.MovePosition(transform.position + transform.up * BulletSpeed * Time.fixedDeltaTime);//Færir byssukúluna

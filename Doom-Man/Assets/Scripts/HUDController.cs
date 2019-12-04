@@ -24,20 +24,23 @@ public class HUDController : MonoBehaviour
 
     void Update()
     {
+        //Breytir ammo texta í UI
         if (playerCont.Weapons[playerCont.WeaponType]["Bullets"].ToString() != ammoAmount.text) {
             ammoAmount.text = playerCont.Weapons[playerCont.WeaponType]["Bullets"].ToString();
         }
-
+        //Breytir health texta í UI
         if (playerCont.health.ToString() != healthAmount.text) {
             healthAmount.text = playerCont.health.ToString();
         }
         hotbar();
+        //Þegar menu er ekki active slekkur það á menuOpen
         if (!menu.activeSelf) {
             menuOpen = false;
         }
         else {
             menuOpen = true;
         }
+        //Þegar menu er opinn þá stoppar tíminn
         if (menuOpen && Time.timeScale != 0) {
             Time.timeScale = 0;
         }
@@ -50,6 +53,8 @@ public class HUDController : MonoBehaviour
         else if (menuOpen && Input.GetKeyDown("escape")) {
             closeMenu();
         }
+
+        //Felur og sýnir músina miðað við hvort menu er opinn eða ekki
         if (cursorVisible) {
             Cursor.visible = true;
         }
@@ -64,6 +69,7 @@ public class HUDController : MonoBehaviour
         }
     }
 
+    //Stjórnar hvaða byssa er valin í hotbar
     void hotbar() {
         if (playerCont.WeaponType == "Pistol") {
             anim.SetInteger("Weapon",1);

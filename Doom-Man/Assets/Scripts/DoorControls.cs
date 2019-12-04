@@ -22,14 +22,16 @@ public class DoorControls : MonoBehaviour
 
     void Update()
     {
-        //Ókláraður kóði sem á að opna hurð þegar player er nálægt
+        //opnar hurð þegar player er nálægt
         if (Vector2.Distance(new Vector2(transform.position.x,transform.position.y),new Vector2(player.transform.position.x,player.transform.position.y)) < 5f) {
             playerClose = true;
         } else {
             playerClose = false;
         }
 
+        //Kóði fyrir takkann í Facility2E
         if (GameObject.FindWithTag("Button")){
+            //Opnar hurð ef allir óvinir eru dauðir
             if (GameObject.FindWithTag("Enemy") == null && redButton.button) {
                 doorAnim.SetBool("Locked",false);
                 doorLocked = false;
